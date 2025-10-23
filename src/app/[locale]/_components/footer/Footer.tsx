@@ -172,11 +172,11 @@ const Footer = () => {
                     <div className="flex justify-between items-center">
                         <Link href="/home" className="flex items-center">
                             <Image
-                            width={100}
-                            height={100}
-                            src="/images/Adaan-Dark-Logo.png"
-                            alt={t("logo.alt")}
-                            className="h-16 w-auto md:h-20 transition-all duration-300 rounded-md"
+                                width={100}
+                                height={100}
+                                src="/images/Adaan-Dark-Logo.png"
+                                alt={t("logo.alt")}
+                                className="h-16 w-auto md:h-20 transition-all duration-300 rounded-md"
                             />
                         </Link>
                         <p className="text-sm text-white"> {t("copyright")} </p>
@@ -188,3 +188,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
