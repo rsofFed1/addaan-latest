@@ -38,7 +38,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/3.jpg',
+    image: '/images/aboutUS/5.jpg',
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -98,7 +98,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/3.jpg',
+    image: '/images/aboutUS/5.jpg',
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',

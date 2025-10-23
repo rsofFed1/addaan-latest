@@ -48,7 +48,7 @@ const HeroSlider = () => {
         },
         {
             id: 3,
-            image: '/images/img2.jpeg',
+            image: '/images/products/DESCO/2.jpeg',
             logos: '/images/partnersLogo/DescoLogo.png',
             title: t('slides.2.title'),
             description: t('slides.2.description'),
@@ -166,7 +166,7 @@ const HeroSlider = () => {
                                     className="object-cover"
                                     priority={index === 0}
                                 />
-                                <div className={cn('absolute inset-0 from-black/70 via-black/50 to-black/20', isRTL ? "bg-gradient-to-l" : "bg-gradient-to-r" )}></div>
+                                <div className={cn('absolute inset-0 from-black/70 via-black/50 to-black/20', isRTL ? "bg-gradient-to-l" : "bg-gradient-to-r")}></div>
                             </div>
                             <div
                                 className="absolute top-50 z-10 flex flex-col justify-evenly gap-2 items-start text-white max-w-[1250px]"
@@ -178,11 +178,11 @@ const HeroSlider = () => {
                                         <>
                                             {slide.logos && (
                                                 <Image
-                                                height={200}
-                                                width={200}
-                                                src={slide.logos}
-                                                alt={slide.title}
-                                                className='mb-10'
+                                                    height={200}
+                                                    width={200}
+                                                    src={slide.logos}
+                                                    alt={slide.title}
+                                                    className='mb-10'
                                                 />
                                             )}
                                             <motion.h2
