@@ -174,7 +174,7 @@ const Footer = () => {
                             <Image
                                 width={100}
                                 height={100}
-                                src="/images/Adaan-Dark-Logo.png"
+                                src="/images/brandLogo/Adaan-Dark-Logo.png"
                                 alt={t("logo.alt")}
                                 className="h-16 w-auto md:h-20 transition-all duration-300 rounded-md"
                             />

@@ -11,39 +11,24 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const AITCCoreTraysData = [
-  {
-    image: "/images/AITCCoreTrays/1.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/2.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/3.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/4.jpg"
-  },
-  {
-    image: "/images/AITCCoreTrays/5.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/6.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/7.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/8.jpg"
-  },
-  {
-    image: "/images/AITCCoreTrays/9.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/10.jpg",
-  },
-  {
-    image: "/images/AITCCoreTrays/11.jpg"
-  },
+    {
+        image: "/images/AITCCoreTrays/9.jpg",
+    },
+    {
+        image: "/images/AITCCoreTrays/10.jpg",
+    },
+    {
+        image: "/images/AITCCoreTrays/11.jpg"
+    },
+    {
+        image: "/images/AITCCoreTrays/9.jpg",
+    },
+    {
+        image: "/images/AITCCoreTrays/10.jpg",
+    },
+    {
+        image: "/images/AITCCoreTrays/11.jpg"
+    },
 ];
 
 export default function AITCCoreTrays() {
@@ -127,7 +112,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/1.jpg"
+                                    src="/images/AITCCoreTrays/10.jpg"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -151,7 +136,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-purple-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/6.jpg"
+                                    src="/images/AITCCoreTrays/11.jpg"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -163,7 +148,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/8.jpg"
+                                    src="/images/AITCCoreTrays/9.jpg"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -175,7 +160,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-red-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/5.jpg"
+                                    src="/images/AITCCoreTrays/10.jpg"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
