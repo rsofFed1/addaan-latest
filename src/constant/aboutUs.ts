@@ -14,7 +14,7 @@ export const discoverData = [
   {
     label: "cards.2.label",
     title: "cards.2.title",
-    image: "/images/aboutUS/3.jpg",
+    image: "/images/aboutUS/5.jpg",
     href: "#",
   },
   {
@@ -23,7 +23,7 @@ export const discoverData = [
     image: "/images/aboutUS/4.jpg",
     href: "#",
   },
-    {
+  {
     label: "cards.4.label",
     title: "cards.4.title",
     image: "/images/aboutUS/5.jpg",
