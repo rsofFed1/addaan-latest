@@ -83,28 +83,28 @@ export default function Products() {
                 },
             ],
         },
-        {
-            id: "cr-epiroc",
-            title: "CR POWERED BY EPIROC",
-            image: "/images/partnersLogo/CRPoweredbyEpiroc.webp",
-            icon: Wrench,
-            description: "Next-Generation Mining Productivity",
-            banner: "Delivering next-generation mining productivity with advanced lips, GET, dragline buckets, and digital solutions",
-            fullDescription: "Cutting-edge mining solutions powered by Epiroc's global expertise and innovative technology stack.",
-            features: ["Digital Integration", "Premium Materials", "Performance Analytics", "Technical Support"],
-            subcategories: [
-                {
-                    image: "/images/partnersLogo/CRPoweredbyEpiroc.webp",
-                    name: "Digital Solutions",
-                    description: "Advanced digital solutions for enhanced mining operations.",
-                    products: [
-                        { name: "Lips & GET Systems", image: "/images/products/lips&GetSystem.jpg", description: "High-performance ground engaging tools" },
-                        { name: "Cast Lips", image: "/images/products/DecaEdgeHeroImage.jpg", description: "Durable cast lip solutions for extreme conditions" },
-                        { name: "Titan Software", image: "/images/products/titanSoftware.png", description: "Advanced software for operational optimization" },
-                    ],
-                },
-            ],
-        },
+        // {
+        //     id: "cr-epiroc",
+        //     title: "CR POWERED BY EPIROC",
+        //     image: "/images/partnersLogo/CRPoweredbyEpiroc.webp",
+        //     icon: Wrench,
+        //     description: "Next-Generation Mining Productivity",
+        //     banner: "Delivering next-generation mining productivity with advanced lips, GET, dragline buckets, and digital solutions",
+        //     fullDescription: "Cutting-edge mining solutions powered by Epiroc's global expertise and innovative technology stack.",
+        //     features: ["Digital Integration", "Premium Materials", "Performance Analytics", "Technical Support"],
+        //     subcategories: [
+        //         {
+        //             image: "/images/partnersLogo/CRPoweredbyEpiroc.webp",
+        //             name: "Digital Solutions",
+        //             description: "Advanced digital solutions for enhanced mining operations.",
+        //             products: [
+        //                 { name: "Lips & GET Systems", image: "/images/products/lips&GetSystem.jpg", description: "High-performance ground engaging tools" },
+        //                 { name: "Cast Lips", image: "/images/products/DecaEdgeHeroImage.jpg", description: "Durable cast lip solutions for extreme conditions" },
+        //                 { name: "Titan Software", image: "/images/products/titanSoftware.png", description: "Advanced software for operational optimization" },
+        //             ],
+        //         },
+        //     ],
+        // },
         {
             id: "drilling-tools",
             title: "DRILLING TOOLS",
