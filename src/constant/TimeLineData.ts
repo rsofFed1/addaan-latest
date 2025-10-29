@@ -28,7 +28,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    images: ['/images/Achievement History Logos/2016/2016-1.jpg'],
+    images: ['/images/Achievement History Logos/2016/2016-1.png'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
