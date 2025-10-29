@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, CheckCircle, ChevronRight, Drill, Globe, Package, Shield, Star, Users, Wrench, Zap } from "lucide-react"
+import { Box, CheckCircle, ChevronRight, Drill, Globe, Package, Shield, Star, Users, Zap } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
 import { ProductDetailModal } from "./ProductDetailModal"

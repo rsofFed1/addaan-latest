@@ -89,12 +89,18 @@
     },
     "AboutPage": {
         "title": "About AITC",
-        "heading": "Partnering with Global Leaders, Empowering Saudi Mining",
+        "heading": "AITC – Addaan International Trading Company",
+        "subheading": "Empowering Saudi Mining with Global Technology and Local Innovation",
         "description": {
-            "paragraph1": "Founded in 2015, Addaan International Trading Company (AITC) is a leading provider of mining and exploration solutions in Saudi Arabia. We combine local manufacturing expertise with strong global partnerships to deliver innovative, high-quality products and technical services.",
-            "paragraph2": "We began our journey as the sole agent for Desco rigs in 2017, supplying reliable and advanced drilling equipment. In 2019, we expanded our portfolio by becoming a trusted distributor of ",
-            "paragraph3": "IMDEX — a global leader in drilling fluids, downhole tools, and data solutions. Between 2020 and 2021, we pioneered the launch of locally manufactured core trays, proudly approved by Ma’aden, reflecting our commitment to Saudi Vision 2030 and local content development. Most recently, in 2025, AITC partnered with CR Mining to provide high-performance GET, cast lips, and digital solutions, further strengthening Saudi Arabia’s mining sector.",
-            "paragraph4": "Through strong collaborations with industry leaders such as Ma’aden and SGS, we continue to drive sustainable growth, operational excellence, and reliability across mining operations."
+            "paragraph": "Founded in 2015, Addaan International Trading Company (AITC) is a trusted provider of integrated mining and exploration solutions across Saudi Arabia and the Middle East. Combining global mining technologies with local expertise, AITC drives industrial diversification and sustainable growth in line with Vision 2030."
+        },
+        "ourJourney": {
+            "title": "Our Journey",
+            "description": "AITC quickly established itself as a trusted partner in Saudi Arabia’s mining sector. In 2017, we partnered with DESCO Drilling to provide high-performance rigs, and in 2019, we joined forces with IMDEX to deliver advanced downhole tools, drilling fluids, and real-time data solutions. By 2021, AITC launched its locally manufactured Core Trays, supporting exploration and sample management. Today, we offer a complete ecosystem of rigs, consumables, downhole and orientation tools, core boxes, and rig maintenance services, empowering mining operations across the Kingdom."
+        },
+        "Supporting": {
+            "title": "Supporting Saudi Arabia’s Mining Transformation",
+            "description": "Aligned with Vision 2030, AITC drives Saudi mining toward global competitiveness by integrating advanced technologies, local expertise, and sustainable practices."
         },
         "cards": [
             {
@@ -123,30 +129,58 @@
             }
         ],
         "features": {
-            "title": "Why Choose AITC?– Addaan International Trading Company?",
-            "0": "Proven expertise: Nearly a decade of leadership in mining solutions",
-            "1": "Global partnerships: Collaborations with IMDEX, CR Mining powered by Epiroc, and Desco Drilling ",
-            "2": "Local manufacturing: State-of-the-art Rabigh facility producing HQ, PQ, and NQ core trays ",
-            "3": "Strategic warehouse facilities: Ensuring fast dispatch and inventory availability",
-            "4": "Balanced approach: Reducing import dependency through local manufacturing while managing essential high-tech imports",
-            "5": "Vision 2030 aligned: Supporting local content, industrial growth, and sustainability",
-            "6": "Tailored solutions: Data-driven solutions that boost productivity, safety, and reduce maintenance",
-            "7": "One-stop provider: Drilling Rigs, Drilling Optimizations, and core handling systems.",
-            "8": "Safety standards: Durable products built for harsh field conditions",
-            "9": "Comprehensive support: From technical consulting to after-sales service"
+            "title": "Why Choose AITC",
+            "0": "10+ years of mining and engineering expertise in Saudi Arabia",
+            "1": "Strategic global partnerships: IMDEX, DESCO Drilling",
+            "2": "Comprehensive portfolio: rigs, consumables, downhole &amp; orientation tools, fluids, and core boxes",
+            "3": "Technical support &amp; after-sales service for operational reliability",
+            "4": "Commitment to local content, safety, and sustainability"
         },
         "stats": {
-            "0": {
-                "number": "250K+",
-                "label": "Core Boxes Sold"
+            "ourMission": {
+                "title": "Our Mission",
+                "description": "Deliver high-performance mining and exploration solutions that empower Saudi operations with technology, reliability, and service excellence."
             },
-            "1": {
-                "number": "9+",
-                "label": "Years Experience"
+            "ourVision": {
+                "title": "Our Vision",
+                "description": "Be the Kingdom’s most trusted partner for innovation, capability building, and sustainable growth in mining."
             },
-            "2": {
-                "number": "18+",
-                "label": "DESCO Rigs Deployed"
+            "certifications": {
+                "title": "Certifications & Compliance",
+                "description": "AITC maintains the highest standards of quality, safety, and operational excellence across all its services and products.",
+                "iso9001": {
+                    "title": "ISO 9001:2015 Quality Management System",
+                    "description": "Certified for implementing rigorous quality management practices across engineering, manufacturing, and service operations."
+                },
+                "iso45001": {
+                    "title": "ISO 45001:2018 Occupational Health & Safety Management System",
+                    "description": "Certified for ensuring a safe and healthy working environment for all employees and contractors."
+                }
+            },
+            "contactInformation": {
+                "title": "Contact Information",
+                "description": "Be the Kingdom's most trusted partner for innovation, capability building, and sustainable growth in mining.",
+                "headOffice": {
+                    "title": "Head Office",
+                    "address": "Al Massa Center, Al Marwa District, II Floor, Office No. 103, Jeddah 23545, Saudi Arabia"
+                },
+                "email": {
+                    "title": "Email",
+                    "address": "info@addaaninternational.com"
+                },
+                "contact": {
+                    "title": "Contact",
+                    "phone": "+966 12 661 0243"
+                }
+            },
+            "callToAction": {
+                "title": "Get in Touch",
+                "description": "Ready to elevate your mining operations? Contact AITC today to explore how our integrated solutions can drive efficiency, sustainability, and growth for your business.",
+                "buttons": {
+                    "contact": "Get in Touch",
+                    "explore": "Explore Our Solutions",
+                    "quote": "Request a Quote"
+                }
             }
         },
         "image": {
@@ -226,7 +260,7 @@
                 "label": "IMDEX",
                 "title": "IMDEX is a global mining technology company headquartered in Perth. With a focus on drilling optimization, rock knowledge, and digital transformation"
             },
- {
+            {
                 "label": "AITC",
                 "title": "Founded in 2015, Addaan International Trading Company (AITC) is a leading provider of mining and exploration solutions in Saudi Arabia. We combine local manufacturing expertise with strong global partnerships to deliver innovative, high-quality products and technical services."
             },
@@ -470,25 +504,69 @@
         },
         "features": {
             "heading": "Key Features of AITC Core Trays",
-            "uv": { "title": "UV-Stabilized Polypropylene", "text": "Manufactured with highly UV-resistant material ensuring long-lasting outdoor performance." },
-            "complete": { "title": "Complete Tray Set", "text": "A secure-fitting universal lid (PQ/HQ/NQ) and 5 easy-to-label separators for accurate core sectioning." },
-            "support": { "title": "Core Support & Orientation", "text": "Ribbed channels to stabilize core samples during transit; optional drain plugs to retain fines and fluids; wide channel dividers and note space for field annotations." },
-            "safety": { "title": "Handling & Safety", "text": "Ergonomic side handles, rounded edges for injury prevention, one-piece design that's easy to carry, lock, and secure; compatible with padlocks or cable ties." },
-            "stackable": { "title": "Stackable & Transport-Ready", "text": "Trays lock securely when stacked; flat base designed for smooth movement on conveyors or benches; stack height: 40 mm (50 trays = 2 meters high)." }
+            "uv": {
+                "title": "UV-Stabilized Polypropylene",
+                "text": "Manufactured with highly UV-resistant material ensuring long-lasting outdoor performance."
+            },
+            "complete": {
+                "title": "Complete Tray Set",
+                "text": "A secure-fitting universal lid (PQ/HQ/NQ) and 5 easy-to-label separators for accurate core sectioning."
+            },
+            "support": {
+                "title": "Core Support & Orientation",
+                "text": "Ribbed channels to stabilize core samples during transit; optional drain plugs to retain fines and fluids; wide channel dividers and note space for field annotations."
+            },
+            "safety": {
+                "title": "Handling & Safety",
+                "text": "Ergonomic side handles, rounded edges for injury prevention, one-piece design that's easy to carry, lock, and secure; compatible with padlocks or cable ties."
+            },
+            "stackable": {
+                "title": "Stackable & Transport-Ready",
+                "text": "Trays lock securely when stacked; flat base designed for smooth movement on conveyors or benches; stack height: 40 mm (50 trays = 2 meters high)."
+            }
         },
         "sizes": {
             "heading": "Available Sizes",
-            "badge": { "pq": "PQ", "hq": "HQ", "nq": "NQ" },
-            "list": { "pq": "PQ Core Tray", "hq": "HQ Core Tray", "nq": "NQ Core Tray" }
+            "badge": {
+                "pq": "PQ",
+                "hq": "HQ",
+                "nq": "NQ"
+            },
+            "list": {
+                "pq": "PQ Core Tray",
+                "hq": "HQ Core Tray",
+                "nq": "NQ Core Tray"
+            }
         },
         "accessories": {
             "heading": "Additional Accessories",
-            "covers": { "title": "Core Tray Covers", "items": "Universal lids that securely fit PQ, HQ, and NQ trays\nUV-resistant and field-proven\nEasy to lock and transport\nOne-size-fits-all design" },
-            "runMarkers": { "title": "Run Markers", "items": "Smooth-fitting markers designed to sit perfectly in the tray grooves\nAvailable in PQ, HQ, and NQ sizes\nIdeal for section marking and core logging" },
-            "rcChip": { "title": "RC Chip Trays", "items": "Durable trays for RC cuttings – ready for field and lab use\nStandard 20/40 Compartment\nLightweight and stackable\nClearly labeled for efficient sample handling" }
+            "covers": {
+                "title": "Core Tray Covers",
+                "items": "Universal lids that securely fit PQ, HQ, and NQ trays\nUV-resistant and field-proven\nEasy to lock and transport\nOne-size-fits-all design"
+            },
+            "runMarkers": {
+                "title": "Run Markers",
+                "items": "Smooth-fitting markers designed to sit perfectly in the tray grooves\nAvailable in PQ, HQ, and NQ sizes\nIdeal for section marking and core logging"
+            },
+            "rcChip": {
+                "title": "RC Chip Trays",
+                "items": "Durable trays for RC cuttings – ready for field and lab use\nStandard 20/40 Compartment\nLightweight and stackable\nClearly labeled for efficient sample handling"
+            }
         },
-        "why": { "heading": "Why Choose AITC Core Trays?", "list": "We are the OEM – built and tested in Saudi Arabia\nOver 250,000 trays deployed successfully across the Kingdom\nDesigned specifically for the harsh conditions of Middle Eastern mining\nFully aligned with the Saudi Vision 2030 for local content development\nFirst-of-its-kind tray developed locally and field-tested since 2021" },
-        "vision": { "heading": "Proudly Supporting Saudi Vision 2030", "paragraph": "Our commitment to local manufacturing and innovation contributes to the Kingdom's economic diversification and industrial growth." }
+        "why": {
+            "heading": "Why Choose AITC Core Trays?",
+            "list": "We are the OEM – built and tested in Saudi Arabia\nOver 250,000 trays deployed successfully across the Kingdom\nDesigned specifically for the harsh conditions of Middle Eastern mining\nFully aligned with the Saudi Vision 2030 for local content development\nFirst-of-its-kind tray developed locally and field-tested since 2021"
+        },
+        "vision": {
+            "heading": "Proudly Supporting Saudi Vision 2030",
+            "paragraph": "Our commitment to local manufacturing and innovation contributes to the Kingdom's economic diversification and industrial growth."
+        },
+        "location": {
+            "heading": "Our Location",
+            "office": "Head Office",
+            "address": "Al Khobar, Saudi Arabia",
+            "viewMap": "View on Google Maps"
+        }
     },
     "Contact": {
         "heading": {

@@ -14,7 +14,7 @@ export default async function page() {
       <DiscoverSection />
       <OurPartnersSection />
       <OurClientsSection />
-      {/* <WhatWebelieveSlider /> */}
+      {/* <WhatWebelieveSection /> */}
       {/* <MagazineSection /> */}
       <TimeLine />
       <MagazineSlider />

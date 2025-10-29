@@ -6,7 +6,7 @@ interface DataItems {
   href: string;
   gradient: string;
   textColor: string;
-  image: string;
+  images?: string[];
 }
 
 export const timeLineData: DataItems[] = [
@@ -18,7 +18,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/1.jpg',
+    images: ['/images/Achievement History Logos/2015/2015-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -28,7 +28,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    image: '/images/aboutUS/2.jpg',
+    images: ['/images/Achievement History Logos/2016/2016-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -38,7 +38,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/5.jpg',
+    images: ['/images/Achievement History Logos/2017/2017-1.JPG'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -48,7 +48,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    image: '/images/aboutUS/4.jpg',
+    images: ['/images/Achievement History Logos/2018/2018-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -58,7 +58,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/5.jpg',
+    images: ['/images/Achievement History Logos/2019/2019-1.webp'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -68,7 +68,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    image: '/images/aboutUS/6.jpg',
+    images: ['/images/Achievement History Logos/2020/2020-1.png'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -78,7 +78,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/1.jpg',
+    images: ['/images/Achievement History Logos/2021/2021-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -88,7 +88,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    image: '/images/aboutUS/2.jpg',
+    images: ['/images/Achievement History Logos/2022/2022-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -98,7 +98,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/5.jpg',
+    images: ['/images/Achievement History Logos/2023/2023-1.jpg'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -108,7 +108,7 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-600 via-gray-700 to-gray-800",
     textColor: "text-white",
-    image: '/images/aboutUS/4.jpg',
+    images: ['/images/Achievement History Logos/2024/2024-1.png'],
   },
   {
     logo: '/images/brandLogo/Adaan-Logo.png',
@@ -118,6 +118,6 @@ export const timeLineData: DataItems[] = [
     href: "#",
     gradient: "from-gray-500 via-gray-600 to-gray-700",
     textColor: "text-white",
-    image: '/images/aboutUS/5.jpg',
+    images: ['/images/Achievement History Logos/2025/2025-1.jpg'],
   },
 ];

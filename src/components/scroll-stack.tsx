@@ -50,7 +50,7 @@ function Card({ children, index, progress, range, totalCards }: CardProps) {
       style={{
         scale,
         opacity,
-        top: `${index * 20 + 100}px`,
+        top: `${index * 20 + 160}px`,
       }}
       className="sticky w-full"
     >
