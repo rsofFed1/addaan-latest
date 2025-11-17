@@ -1,16 +1,15 @@
 "use client";
-import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { Params } from "@/types/locale";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useState, useRef } from "react";
+import { useParams } from "next/navigation";
+import { useRef } from "react";
+import type { Swiper as SwiperType } from 'swiper';
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import type { Swiper as SwiperType } from 'swiper';
-import { cn } from "@/lib/utils";
-import { useParams } from "next/navigation";
-import { Params } from "@/types/locale";
+import { VideoPlayer, VideoPlayerContent, VideoPlayerControlBar, VideoPlayerPlayButton, VideoPlayerTimeDisplay, VideoPlayerTimeRange } from "./ui/video-player";
 
 const DataItems = [
   {
@@ -37,7 +36,7 @@ const DataItems = [
     image: '/images/partnersLogo/IMDEXLogo-1.webp',
     video: "/videos/IMDEX - 2025.mp4",
   },
-    {
+  {
     label: "cards.4.label",
     title: "cards.4.title",
     image: '/images/main_large.webp',
@@ -59,54 +58,16 @@ const DataItems = [
 
 const MagazineSlider = () => {
   const t = useTranslations("MagazineSection");
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const swiperRef = useRef<SwiperType | undefined>(undefined);
-  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
-  const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
-
   const { locale } = useParams<Params>();
   const isRTL = locale === 'ar';
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const { currentTarget, clientX, clientY } = e;
-    const { left, top } = currentTarget.getBoundingClientRect();
-    setMousePosition({
-      x: clientX - left,
-      y: clientY - top,
-    });
-  };
-
-  const handlePlayPause = async (index: number) => {
-    try {
-      const video = videoRefs.current[index];
-      if (video) {
-        if (playingIndex === index) {
-          video.pause();
-          setPlayingIndex(null);
-        } else {
-          if (playingIndex !== null && videoRefs.current[playingIndex]) {
-            videoRefs.current[playingIndex]?.pause();
-          }
-          await video.play();
-          setPlayingIndex(index);
-        }
-      }
-    } catch (error) {
-      console.error('Error playing/pausing video:', error);
-    }
-  };
 
   return (
     <>
       <section className="py-16 md:py-24 relative my-24">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/images/artwork/artwork-6.webp')" }}
-        >
-        </div>
-        <div className="max-w-[1400px] mx-auto px-6 relative">
-          <div className="px-0 md:px-16 pb-10 md:pb-16 flex justify-between items-center">
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/images/artwork/artwork-6.webp')" }} > </div>
+        <div className="max-w-[1250px] mx-auto px-6 relative">
+          <div className="pb-10 md:pb-16 flex justify-between items-center">
             <h2 className="text-[28px] md:text-[40px] font-normal text-white max-full mb-4">
               {t("heading.title")}
             </h2>
@@ -129,7 +90,6 @@ const MagazineSlider = () => {
               </button>
             </div>
           </div>
-
           {/* Slider */}
           <Swiper
             modules={[Navigation]}
@@ -147,59 +107,26 @@ const MagazineSlider = () => {
           >
             {DataItems.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <div
-                  className="group relative rounded-2xl overflow-hidden shadow-md h-[180px] md:h-[300px] w-full flex mb-4"
-                  onMouseMove={(e) => handleMouseMove(e)}
-                  onMouseEnter={() => setHoveredCard(idx)}
-                  onMouseLeave={() => setHoveredCard(null)}
-                >
-                  {hoveredCard === idx && (
-                    <motion.div
-                      className="pointer-events-none absolute w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm z-50"
-                      animate={{ x: mousePosition.x - 48, y: mousePosition.y - 48, scale: 1.2, opacity: 0.3, }}
-                      initial={{ scale: 0, opacity: 0 }}
-                      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1, }}
-                    />
-                  )}
-                  {item.video ? (
-                    <video
-                      ref={(el) => { videoRefs.current[idx] = el; }}
-                      loop
+                <div className="w-full h-[180px] md:h-[300px] mb-4 shadow-md">
+                  <VideoPlayer className="w-full h-full overflow-hidden rounded-xl">
+                    <VideoPlayerContent
+                      className=" w-full h-full object-cover"
+                      crossOrigin=""
                       muted
-                      playsInline
-                      // poster={item.image}
-                      className="w-full h-auto object-cover"
-                      onClick={() => handlePlayPause(idx)}
-                    >
-                      <source src={item.video} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <Image
-                      src={item.image!}
-                      alt={item.label}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, 25vw"
-                      priority={idx === 0}
+                      preload="auto"
+                      slot="media"
+                      src={item.video}
                     />
-                  )}
-                  {item.video && playingIndex !== idx && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div
-                        onClick={() => handlePlayPause(idx)}
-                        className="w-10 h-10 rounded-full bg-black/20 backdrop-blur-sm border border-white/30 flex items-center justify-center group cursor-pointer hover:bg-white/30 transition-all"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 25 28.12"
-                           className="w-5 h-5 text-white ml-1"
-                           fill="currentColor"
-                        >
-                          <path d="m23.53,13.69c.29.17.29.58,0,.74L1.92,26.81c-.31.18-.67-.05-.67-.37V1.68c0-.32.36-.55.67-.37l21.61,12.38Z" />
-                        </svg>
-                      </div>
-                    </div>
-                  )}
+                    <VideoPlayerControlBar>
+                      <VideoPlayerPlayButton className="bg-black"/>
+                      {/* <VideoPlayerSeekBackwardButton />
+                      <VideoPlayerSeekForwardButton /> */}
+                      <VideoPlayerTimeRange className="bg-black" />
+                      <VideoPlayerTimeDisplay className="bg-black text-white" showDuration />
+                      {/* <VideoPlayerMuteButton /> */}
+                      {/* <VideoPlayerVolumeRange /> */}
+                    </VideoPlayerControlBar>
+                  </VideoPlayer>
                 </div>
                 <div className="relative z-10 flex flex-col justify-between w-full h-full">
                   <div>
