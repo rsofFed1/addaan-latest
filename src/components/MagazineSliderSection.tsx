@@ -16,44 +16,44 @@ const DataItems = [
   {
     label: "cards.0.label",
     title: "cards.0.title",
-    image: '/images/img1.webp',
+    image: '/images/main_large.webp',
     video: "/videos/video1.mp4",
   },
   {
     label: "cards.1.label",
     title: "cards.1.title",
-    image: '/images/img2.webp',
-    video: "/videos/فيلم عدان 2023.mp4",
+    image: '/images/main_large.webp',
+    video: "/videos/IMDEX - 2025.mp4",
   },
   {
     label: "cards.2.label",
     title: "cards.2.title",
-    image: '/images/img3.webp',
-    video: "/videos/عدان 2024.mp4",
+    image: '/images/partnersLogo/DescoLogo.webp',
+    video: "/videos/2 Rod rack system.mp4",
   },
   {
     label: "cards.3.label",
     title: "cards.3.title",
-    image: '/images/img4.webp',
-    video: "/videos/فيلم IMDEX -  مؤتمر التعدين - ٢٠٢٥.mp4",
+    image: '/images/partnersLogo/IMDEXLogo-1.webp',
+    video: "/videos/IMDEX - 2025.mp4",
   },
     {
     label: "cards.4.label",
     title: "cards.4.title",
-    image: '/images/img5.webp',
-    video: "/videos/فيلم التعدين - IMDEX - عدان ٢٠٢٥.mp4",
+    image: '/images/main_large.webp',
+    video: "/videos/فيلم عدان 2023.mp4",
   },
   {
     label: "cards.5.label",
     title: "cards.5.title",
-    image: '/images/img6.webp',
+    image: '/images/main_large.webp',
     video: "/videos/تقرير عدان في الرياض.mp4",
   },
   {
     label: "cards.5.label",
     title: "cards.5.title",
-    image: '/images/img6.webp',
-    video: "/videos/2 Rod rack system.mp4",
+    image: '/images/main_large.webp',
+    video: "/videos/عدان 2024.mp4",
   },
 ];
 
@@ -148,14 +148,14 @@ const MagazineSlider = () => {
             {DataItems.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <div
-                  className="group relative rounded-2xl overflow-hidden shadow-md h-[200px] md:h-[320px] flex mb-4"
+                  className="group relative rounded-2xl overflow-hidden shadow-md h-[180px] md:h-[300px] w-full flex mb-4"
                   onMouseMove={(e) => handleMouseMove(e)}
                   onMouseEnter={() => setHoveredCard(idx)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
                   {hoveredCard === idx && (
                     <motion.div
-                      className="pointer-events-none absolute w-40 h-40 rounded-full bg-white/30 backdrop-blur-sm z-50"
+                      className="pointer-events-none absolute w-20 h-20 rounded-full bg-white/30 backdrop-blur-sm z-50"
                       animate={{ x: mousePosition.x - 48, y: mousePosition.y - 48, scale: 1.2, opacity: 0.3, }}
                       initial={{ scale: 0, opacity: 0 }}
                       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1, }}
@@ -167,7 +167,8 @@ const MagazineSlider = () => {
                       loop
                       muted
                       playsInline
-                      className="w-full h-full object-cover"
+                      // poster={item.image}
+                      className="w-full h-auto object-cover"
                       onClick={() => handlePlayPause(idx)}
                     >
                       <source src={item.video} type="video/mp4" />
