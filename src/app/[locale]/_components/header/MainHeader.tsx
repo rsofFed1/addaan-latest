@@ -78,7 +78,7 @@ export default function MainHeader() {
                         <Image
                             width={100}
                             height={100}
-                            src="/images/brandLogo/Adaan-Dark-Logo.png"
+                            src="/images/brandLogo/Adaan-Dark-Logo.webp"
                             alt={t("logo.alt")}
                             className="h-16 w-auto md:h-20"
                         />

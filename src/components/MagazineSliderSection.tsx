@@ -16,43 +16,43 @@ const DataItems = [
   {
     label: "cards.0.label",
     title: "cards.0.title",
-    image: '/images/img1.jpeg',
+    image: '/images/img1.webp',
     video: "/videos/video1.mp4",
   },
   {
     label: "cards.1.label",
     title: "cards.1.title",
-    image: '/images/img2.jpeg',
+    image: '/images/img2.webp',
     video: "/videos/فيلم عدان 2023.mp4",
   },
   {
     label: "cards.2.label",
     title: "cards.2.title",
-    image: '/images/img3.jpeg',
+    image: '/images/img3.webp',
     video: "/videos/عدان 2024.mp4",
   },
   {
     label: "cards.3.label",
     title: "cards.3.title",
-    image: '/images/img4.jpeg',
+    image: '/images/img4.webp',
     video: "/videos/فيلم IMDEX -  مؤتمر التعدين - ٢٠٢٥.mp4",
   },
     {
     label: "cards.4.label",
     title: "cards.4.title",
-    image: '/images/img5.jpeg',
+    image: '/images/img5.webp',
     video: "/videos/فيلم التعدين - IMDEX - عدان ٢٠٢٥.mp4",
   },
   {
     label: "cards.5.label",
     title: "cards.5.title",
-    image: '/images/img6.jpeg',
+    image: '/images/img6.webp',
     video: "/videos/تقرير عدان في الرياض.mp4",
   },
   {
     label: "cards.5.label",
     title: "cards.5.title",
-    image: '/images/img6.jpeg',
+    image: '/images/img6.webp',
     video: "/videos/2 Rod rack system.mp4",
   },
 ];
@@ -102,7 +102,7 @@ const MagazineSlider = () => {
       <section className="py-16 md:py-24 relative my-24">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/images/artwork/artwork-6.jpg')" }}
+          style={{ backgroundImage: "url('/images/artwork/artwork-6.webp')" }}
         >
         </div>
         <div className="max-w-[1400px] mx-auto px-6 relative">

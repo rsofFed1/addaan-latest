@@ -9,6 +9,26 @@
             "learnMore": "Learn More",
             "keyFeatures": "Key Features"
         },
+        "imdex": {
+            "title": "Imdex Products",
+            "heading": "Innovative Mining Technology Company",
+            "description": "Empowering Mining with Real-Time Data and Advanced Drilling Technologies"
+        },
+        "desco": {
+            "title": "Desco Products",
+            "heading": "Precision Engineered Drill Rigs",
+            "description": "Precision Engineered Drill Rigs Built to Perform in the Toughest Environments"
+        },
+        "drillingTools": {
+            "title": "Drilling Tools",
+            "heading": "Comprehensive Drilling Solutions",
+            "description": "Complete range of drilling tools for all mining applications"
+        },
+        "aitcCoreTrays": {
+            "title": "AITC Core Trays",
+            "heading": "Saudi Made Excellence - Locally manufactured in our state-of-the-art Rabigh facility • Supporting Vision 2030",
+            "description": "Durable, Saudi-Made Solutions Engineered for Precision and Reliability"
+        },
         "coreTrays": {
             "flagshipProduct": "Flagship Product",
             "title": "AITC Core Trays",
@@ -187,33 +207,24 @@
             "alt": "AITC Manufacturing Facility"
         }
     },
-    "WhatWeBelieve": {
+    "callToAction": {
+        "title": "Get in Touch",
+        "description": "Ready to elevate your mining operations? Contact AITC today to explore how our integrated solutions can drive efficiency, sustainability, and growth for your business.",
+        "buttons": {
+            "contact": "Get in Touch",
+            "explore": "Explore Our Solutions",
+            "quote": "Request a Quote"
+        }
+    },
+    "MainBanners": {
         "items": {
-            "provenExpertise": "Proven Expertise",
-            "globalPartnerships": "Global Partnerships",
-            "localManufacturing": "Local Manufacturing",
-            "strategicWarehouse": "Strategic Warehouse Facilities",
-            "balancedApproach": "Balanced Approach",
-            "vision2030": "Vision 2030 Aligned",
-            "tailoredSolutions": "Tailored Mining Solutions",
-            "oneStopProvider": "One-Stop Provider",
-            "safetyStandards": "High Safety & Quality Standards",
-            "comprehensiveSupport": "Comprehensive Support"
-        },
-        "description": {
-            "provenExpertise": "Nearly a decade of leadership in mining solutions, drilling, and automation",
-            "globalPartnerships": "Collaborations with IMDEX, CR Mining powered by Epiroc, and Desco Drilling",
-            "localManufacturing": "State-of-the-art Rabigh facility producing HQ, PQ, and NQ core trays",
-            "strategicWarehouse": "Ensuring fast dispatch and inventory availability",
-            "balancedApproach": "Reducing import dependency through local manufacturing while managing essential high-tech imports",
-            "vision2030": "Supporting local content, industrial growth, and sustainability",
-            "tailoredSolutions": "Data-driven solutions that boost productivity, safety, and reduce maintenance.",
-            "oneStopProvider": "Drilling Rigs, Drilling Optimizations, and core handling systems",
-            "safetyStandards": "Durable products built for harsh field conditions",
-            "comprehensiveSupport": "From technical consulting to after-sales service"
+            "imdex": "IMDEX",
+            "desco": "DESCO",
+            "drillingTools": "DRILLING TOOLS ",
+            "aitcCoreTrays": "AITC CORE TRAYS"
         },
         "heading": {
-            "label": "Why Choose AITC?",
+            "label": "Our Supplier",
             "title": "Addaan International Trading Company"
         },
         "learnMore": "Learn more"
@@ -278,21 +289,24 @@
         "slides": [
             {
                 "id": 1,
-                "title": "Ahead of the Curve. Straight to the target.",
+                "title": "Ahead of the Curve.",
+                "titleNextLine": "Straight to the target.",
                 "description": "Leading global experts in Directional Core Drilling.",
                 "buttonText": "imdex.com",
                 "thumbTitle": "IMDEX banner"
             },
             {
                 "id": 2,
-                "title": "AITC Core Trays — Durable, Saudi-Made Solutions Engineered for Precision and Reliability.",
+                "title": "AITC Core Trays — Durable,",
+                "titleNextLine": "Saudi-Made Solutions Engineered for Precision and Reliability.",
                 "description": "AITC Core Trays.",
                 "buttonText": "aitccoretrays.com",
                 "thumbTitle": "AITC Banner"
             },
             {
                 "id": 3,
-                "title": "Desco — Precision Engineered Drill Rigs Built to Perform in the Toughest Environments.",
+                "title": "Desco — Precision Engineered",
+                "titleNextLine": "Drill Rigs Built to Perform in the Toughest Environments.",
                 "description": "Desco — Precision Engineered Drill Rigs.",
                 "buttonText": "desco.com",
                 "thumbTitle": "Desco Drilling Rigs"
@@ -562,9 +576,9 @@
             "paragraph": "Our commitment to local manufacturing and innovation contributes to the Kingdom's economic diversification and industrial growth."
         },
         "location": {
-            "heading": "Our Location",
-            "office": "Head Office",
-            "address": "Al Khobar, Saudi Arabia",
+            "heading": "Head Office – Jeddah",
+            "office": "Addaan International Trading Company (AITC)",
+            "address": "Al Massa Center, Al Marwa District 2nd Floor, Office No. 103 Jeddah 23545, Saudi Arabia",
             "viewMap": "View on Google Maps"
         }
     },

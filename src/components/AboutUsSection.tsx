@@ -15,7 +15,7 @@ const AboutUsSection = () => {
         <section className="relative h-[200px] lg:h-[250px] overflow-hidden">
             <div className="absolute inset-0">
                 <Image
-                    src="https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg"
+                    src="https://images.pexels.com/photos/4484078/pexels-photo-4484078.webp"
                     alt={t('AboutUs.image.alt')}
                     fill
                     className="object-cover"

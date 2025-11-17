@@ -35,7 +35,7 @@ const DiscoverSlider = () => {
       <section className="py-16 md:py-24 relative my-24">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/images/artwork/artwork-7.jpg')" }}
+          style={{ backgroundImage: "url('/images/artwork/artwork-7.webp')" }}
         >
         </div>
 

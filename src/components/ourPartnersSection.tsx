@@ -36,7 +36,7 @@ const getPartnerData = (t: (key: string) => string): Partner[] => [
         </defs>
       </svg>
     ),
-    image: "/images/partnersLogo/IMDEXLogo.png",
+    image: "/images/partnersLogo/IMDEXLogo.webp",
     features: [
       t('OurPartners.partners.imdex.features.0'),
       t('OurPartners.partners.imdex.features.1'),
@@ -115,7 +115,7 @@ const getPartnerData = (t: (key: string) => string): Partner[] => [
         </defs>
       </svg>
     ),
-    image: "/images/partnersLogo/DescoLogo.png",
+    image: "/images/partnersLogo/DescoLogo.webp",
     features: [
       t('OurPartners.partners.desco.features.0'),
       t('OurPartners.partners.desco.features.1'),
@@ -136,7 +136,7 @@ export const OurPartnersSection = () => {
     <section className="py-16 md:py-24 relative mb-24">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: "url('/images/artwork/artwork-5.jpg')" }}
+        style={{ backgroundImage: "url('/images/artwork/artwork-5.webp')" }}
       >
       </div>
       <div className="max-w-[1250px] mx-auto px-6 relative">

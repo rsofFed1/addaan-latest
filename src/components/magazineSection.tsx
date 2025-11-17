@@ -6,17 +6,17 @@ import Link from "next/link";
 const data = [
   {
     title: "Wa’ed Ventures: a decade of empowering entrepreneurs",
-    image: "https://images.pexels.com/photos/12247603/pexels-photo-12247603.jpeg",
+    image: "https://images.pexels.com/photos/12247603/pexels-photo-12247603.webp",
     href: "#",
   },
   {
     title: "Addaan’s historic ‘No. 1’ wells",
-    image: "https://images.pexels.com/photos/33192/paddle-wheel-bucket-wheel-excavators-brown-coal-open-pit-mining.jpg",
+    image: "https://images.pexels.com/photos/33192/paddle-wheel-bucket-wheel-excavators-brown-coal-open-pit-mining.webp",
     href: "#",
   },
   {
     title: "How Addaan is progressing toward a circular economy",
-    image: "https://images.pexels.com/photos/17971796/pexels-photo-17971796.jpeg",
+    image: "https://images.pexels.com/photos/17971796/pexels-photo-17971796.webp",
     href: "#",
   },
 ];

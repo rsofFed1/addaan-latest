@@ -1,4 +1,5 @@
 "use client";
+import CallToAction from "@/components/CallToAction";
 import { Params } from "@/types/locale";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -148,6 +149,17 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
+                </div>
+                <div className="flex items-center justify-between w-full">
+                    <div>
+                        <CallToAction
+                            title=" "
+                            description="Have a question or need a quote? We’re here to help."
+                            showExploreButton={false}
+                            useAnimation={false}
+                            useBlackBg={false}
+                        />
+                    </div>
                     <div className="flex items-center gap-3">
                         <Link
                             href="/en"
@@ -166,7 +178,6 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-
                 {/* Bottom Section */}
                 <div className="border-t border-gray-300 pt-10">
                     <div className="flex justify-between items-center">
@@ -174,7 +185,7 @@ const Footer = () => {
                             <Image
                                 width={100}
                                 height={100}
-                                src="/images/brandLogo/Adaan-Dark-Logo.png"
+                                src="/images/brandLogo/Adaan-Dark-Logo.webp"
                                 alt={t("logo.alt")}
                                 className="h-16 w-auto md:h-20 transition-all duration-300 rounded-md"
                             />

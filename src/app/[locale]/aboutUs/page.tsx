@@ -1,5 +1,6 @@
 "use client"
 
+import CallToAction from "@/components/CallToAction"
 import AnimatedSection from "@/components/ui/animated-section"
 import ParallaxElement from "@/components/ui/parallax-element"
 import { discoverData } from "@/constant/aboutUs"
@@ -22,7 +23,7 @@ export default function About() {
   return (
     <>
       <div className="bg-black pt-[80px] md:pt-[112px]">
-        <section className="relative text-white py-18 px-4 md:px-16 mb-24" style={{ backgroundImage: "url('/images/artwork/artwork-7.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
+        <section className="relative text-white py-18 px-4 md:px-16 mb-24" style={{ backgroundImage: "url('/images/artwork/artwork-7.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
           <div className="container max-w-6xl mx-auto px-4 z-10 relative">
             <div className="text-center">
               <div className="inline-flex items-center justify-center mb-6">
@@ -38,7 +39,7 @@ export default function About() {
         <section className="py-16 md:py-24 relative overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-20"
-            style={{ backgroundImage: "url('/images/artwork/artwork-5.jpg')" }}
+            style={{ backgroundImage: "url('/images/artwork/artwork-5.webp')" }}
           >
           </div>
           <div className="max-w-[1400px] mx-auto px-6">
@@ -222,33 +223,11 @@ export default function About() {
                   </div>
                 </AnimatedSection>
               </div>
-
               <div className="my-20">
-                <AnimatedSection animation="fadeInUp" delay={200}>
-                  <div className="relative bg-black backdrop-blur-md border border-mining-blue/20 rounded-2xl p-8 shadow-lg overflow-hidden">
-                    <ParallaxElement speed={0.1} className="absolute inset-0 opacity-0 group-hover:opacity-100">
-                      <div className="w-full h-full bg-gradient-to-r from-mining-blue/5 via-transparent to-mining-light-blue/5"></div>
-                    </ParallaxElement>
-
-                    <div className="relative z-10 text-center">
-                      <h3 className="text-2xl font-bold mb-3 text-white">{t('stats.callToAction.title')}</h3>
-                      <p className="text-white mb-6">{t('stats.callToAction.description')}</p>
-                      <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                        <button className="bg-mining-blue text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-mining-light-blue hover:scale-105 flex-1 sm:flex-none">
-                          {t('stats.callToAction.buttons.contact')}
-                        </button>
-
-                        <button className="bg-white shadow-sm border border-gray-100 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-mining-blue/5 hover:scale-105 flex-1 sm:flex-none">
-                          {t('stats.callToAction.buttons.explore')}
-                        </button>
-
-                        <button className="bg-mining-gray text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-mining-gray/80 hover:scale-105 flex-1 sm:flex-none">
-                          {t('stats.callToAction.buttons.quote')}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedSection>
+                <CallToAction
+                  title={t('stats.callToAction.title')}
+                  description={t('stats.callToAction.description')}
+                />
               </div>
             </div>
           </div>

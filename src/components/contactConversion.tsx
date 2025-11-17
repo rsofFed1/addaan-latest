@@ -2,45 +2,47 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import ContactUsAITCForm from './ContactFormAITC';
+import { Button } from './ui/button';
 
 export default function ContactConversion() {
     const t = useTranslations();
-    const [formData, setFormData] = useState({
-        products: '',
-        description: '',
-        originZip: '',
-        destinationZip: '',
-        email: ''
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    // const [formData, setFormData] = useState({
+    //     products: '',
+    //     description: '',
+    //     originZip: '',
+    //     destinationZip: '',
+    //     email: ''
+    // });
+    // const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsSubmitting(true);
+    // const handleSubmit = async (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     setIsSubmitting(true);
 
-        await new Promise(resolve => setTimeout(resolve, 1500));
+    //     await new Promise(resolve => setTimeout(resolve, 1500));
 
-        console.log('Form submitted:', formData);
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({
-            products: '',
-            description: '',
-            originZip: '',
-            destinationZip: '',
-            email: ''
-        });
-        setTimeout(() => setIsSubmitted(false), 5000);
-    };
+    //     console.log('Form submitted:', formData);
+    //     setIsSubmitting(false);
+    //     setIsSubmitted(true);
+    //     setFormData({
+    //         products: '',
+    //         description: '',
+    //         originZip: '',
+    //         destinationZip: '',
+    //         email: ''
+    //     });
+    //     setTimeout(() => setIsSubmitted(false), 5000);
+    // };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
-    };
+    // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    //     const { name, value } = e.target;
+    //     setFormData(prev => ({
+    //         ...prev,
+    //         [name]: value
+    //     }));
+    // };
 
     const handleDownloadBrochure = () => {
         const url = 'https://addaaninternational.com/company-profile-2019.pdf';
@@ -55,11 +57,7 @@ export default function ContactConversion() {
 
     return (
         <section className="py-20 px-4 relative overflow-hidden">
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-20"
-                style={{ backgroundImage: "url('/images/artwork/artwork-8.jpg')" }}
-            >
-            </div>
+            <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/images/artwork/artwork-8.webp')" }} > </div>
             <div className="max-w-7xl mx-auto relative">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <motion.div
@@ -71,7 +69,7 @@ export default function ContactConversion() {
                         <div
                             className="w-full h-64 lg:h-100 flex-shrink-0"
                             style={{
-                                backgroundImage: 'url(/images/brochure.jpg)',
+                                backgroundImage: 'url(/images/brochure.webp)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center'
                             }}
@@ -87,15 +85,12 @@ export default function ContactConversion() {
                                     Learn more about us, our services and new company locations in our new brochure. Download our annual brochure 2019.
                                 </p>
                             </div>
-
-                            <motion.button
+                            <Button
+                                type="button"
                                 onClick={handleDownloadBrochure}
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="w-full bg-[#222222] text-white py-4 px-6 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden"
-                            >
+                                className="bg-black w-full font-medium text-md text-white py-6 rounded-md hover:bg-black/90 transition-colors cursor-pointer">
                                 DOWNLOAD NOW
-                            </motion.button>
+                            </Button>
                         </div>
                     </motion.div>
 
@@ -123,16 +118,15 @@ export default function ContactConversion() {
                                 </motion.div>
                             )}
                         </AnimatePresence>
-                        <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 lg:p-10 relative overflow-hidden">
-                            <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 rounded-full translate-y-12 -translate-x-12"></div>
-
-                            <div className="relative">
+                        <div className="bg-black h-full rounded-2xl shadow-lg border border-gray-500 px-4 relative overflow-hidden">
+                            <ContactUsAITCForm />
+                            {/* <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 rounded-full translate-y-12 -translate-x-12"></div> */}
+                            {/* <div className="relative">
                                 <div className="text-center mb-8">
                                     <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                                         QUICK QUOTE
                                     </h3>
                                 </div>
-
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="space-y-1">
                                         <label htmlFor="products" className="block text-sm font-medium text-gray-700 mb-2">
@@ -242,7 +236,7 @@ export default function ContactConversion() {
                                         <div className="absolute inset-0 bg-white opacity-0 hover:opacity-10 transition-opacity duration-200"></div>
                                     </motion.button>
                                 </form>
-                            </div>
+                            </div> */}
                         </div>
                     </motion.div>
                 </div>

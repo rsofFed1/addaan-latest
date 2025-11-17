@@ -23,7 +23,7 @@ export default function TimeLine() {
         <section className="bg-[#202021] relative">
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-10"
-                style={{ backgroundImage: "url('/images/artwork/artwork-1.jpg')" }}
+                style={{ backgroundImage: "url('/images/artwork/artwork-1.webp')" }}
             >
             </div>
             {/* <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,transparent,black)] bg-grid-pattern"></div> */}

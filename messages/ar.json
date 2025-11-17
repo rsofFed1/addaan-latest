@@ -9,6 +9,26 @@
             "learnMore": "اعرف المزيد",
             "keyFeatures": "المميزات الرئيسية"
         },
+        "imdex": {
+            "title": "منتجات Imdex",
+            "heading": "شركة تكنولوجيا التعدين المبتكرة",
+            "description": "تمكين التعدين ببيانات الوقت الحقيقي وتقنيات الحفر المتقدمة"
+        },
+        "desco": {
+            "title": "منتجات Desco",
+            "heading": "معدات حفر مصممة بدقة",
+            "description": "معدات حفر مصممة بدقة لتعمل في أصعب البيئات"
+        },
+        "drillingTools": {
+            "title": "أدوات الحفر",
+            "heading": "حلول حفر شاملة",
+            "description": "مجموعة كاملة من أدوات الحفر لجميع تطبيقات التعدين"
+        },
+        "aitcCoreTrays": {
+            "title": "صواني عينات AITC",
+            "heading": "التميز صنع في السعودية - مصنعة محلياً في منشأتنا المتطورة في رابغ • دعم رؤية 2030",
+            "description": "حلول متينة مصنوعة في السعودية مصممة للدقة والموثوقية"
+        },
         "coreTrays": {
             "flagshipProduct": "المنتج الرئيسي",
             "title": "صناديق عينات AITC",
@@ -187,36 +207,27 @@
             "alt": "منشأة تصنيع AITC"
         }
     },
-    "WhatWeBelieve": {
+    "callToAction": {
+        "title": "تواصل معنا",
+        "description": "مستعد لرفع مستوى عمليات التعدين الخاصة بك؟ اتصل بـ AITC اليوم لاستكشاف كيف يمكن لحلولنا المتكاملة دفع الكفاءة والاستدامة والنمو لعملك.",
+        "buttons": {
+            "contact": "تواصل معنا",
+            "explore": "استكشف حلولنا",
+            "quote": "طلب عرض سعر"
+        }
+    },
+    "MainBanners": {
         "items": {
-            "provenExpertise": "خبرة مثبتة",
-            "globalPartnerships": "شراكات عالمية",
-            "localManufacturing": "تصنيع محلي",
-            "strategicWarehouse": "مرافق مستودعات استراتيجية",
-            "balancedApproach": "نهج متوازن",
-            "vision2030": "متوافق مع رؤية 2030",
-            "tailoredSolutions": "حلول تعدين مخصصة",
-            "oneStopProvider": "مزود شامل",
-            "safetyStandards": "معايير عالية للسلامة والجودة",
-            "comprehensiveSupport": "دعم فني شامل"
-        },
-        "description": {
-            "provenExpertise": "خبرة مثبتة في حلول التعدين، والحفر، والأتمتة على مدار عقد من الزمن",
-            "globalPartnerships": "شراكات مع IMDEX و CR Mining المدعومة من Epiroc و Desco Drilling",
-            "localManufacturing": "منشأة رابغ المتطورة التي تنتج صناديق العينات HQ و PQ و NQ",
-            "strategicWarehouse": "ضمان الشحن السريع وتوافر المخزون",
-            "balancedApproach": "تقليل الاعتماد على الواردات من خلال التصنيع المحلي مع إدارة الواردات عالية التقنية الأساسية",
-            "vision2030": "دعم المحتوى المحلي، والنمو الصناعي، والاستدامة",
-            "tailoredSolutions": "حلول مدفوعة بالبيانات تعزز الإنتاجية والسلامة وتقلل من الصيانة.",
-            "oneStopProvider": "حفارات، وتحسينات الحفر، وأنظمة التعامل مع النوى",
-            "safetyStandards": "منتجات متينة مصممة لتحمل ظروف العمل القاسية",
-            "comprehensiveSupport": "من الاستشارات الفنية إلى خدمات ما بعد البيع"
+            "imdex": "IMDEX",
+            "desco": "DESCO",
+            "drillingTools": "DRILLING TOOLS ",
+            "aitcCoreTrays": "AITC CORE TRAYS"
         },
         "heading": {
-            "label": "لماذا تختار AITC؟",
-            "title": "شركة عدان التجارية الدولية"
+            "label": "Our Supplier",
+            "title": "Addaan International Trading Company"
         },
-        "learnMore": "اعرف المزيد"
+        "learnMore": "Learn more"
     },
     "DiscoverSection": {
         "heading": {
@@ -279,6 +290,7 @@
             {
                 "id": 1,
                 "title": "عدان للتعدين - حلول سعودية متينة",
+                "titleNextLine": "مباشرة إلى الهدف.",
                 "description": "شراكة مع القادة العالميين، تمكين التعدين السعودي",
                 "buttonText": "اكتشف المزيد",
                 "thumbTitle": "عدان للتعدين"
@@ -286,6 +298,7 @@
             {
                 "id": 2,
                 "title": "كيف يمكننا المساعدة في هندسة مستقبل أفضل للجميع؟",
+                "titleNextLine": "حلول مصنوعة في السعودية مصممة للدقة والموثوقية.",
                 "description": "اغمس في الأزرق العميق واكتشف أسرار عالم تحت الماء.",
                 "buttonText": "اكتشف كيف",
                 "thumbTitle": "مدعوم بكيف"
@@ -293,6 +306,7 @@
             {
                 "id": 3,
                 "title": "كيف تتقدم عدان نحو الاقتصاد الدائري",
+                "titleNextLine": "حفارات مصممة للأداء في أصعب البيئات.",
                 "description": "اختبر اتساع وجمال المناظر الصحراوية تحت الشمس الذهبية.",
                 "buttonText": "اقرأ المزيد",
                 "thumbTitle": "مجلة العناصر"
@@ -562,9 +576,9 @@
             "paragraph": "التزامنا بالتصنيع المحلي والابتكار يساهم في تنويع الاقتصاد والنمو الصناعي للمملكة."
         },
         "location": {
-            "heading": "Our Location",
-            "office": "Head Office",
-            "address": "Al Khobar, Saudi Arabia",
+            "heading": "Head Office – Jeddah",
+            "office": "Addaan International Trading Company (AITC)",
+            "address": "Al Massa Center, Al Marwa District 2nd Floor, Office No. 103 Jeddah 23545, Saudi Arabia",
             "viewMap": "View on Google Maps"
         }
     },

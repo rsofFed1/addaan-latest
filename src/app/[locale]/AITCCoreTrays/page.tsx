@@ -1,33 +1,34 @@
 "use client";
 
+import ContactUsAITCForm from '@/components/ContactFormAITC';
 import { cn } from '@/lib/utils';
 import { Params } from '@/types/locale';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import "swiper/css"
-import "swiper/css/pagination"
 import { useParams } from 'next/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const AITCCoreTraysData = [
     {
-        image: "/images/AITCCoreTrays/9.jpg",
+        image: "/images/AITCCoreTrays/9.webp",
     },
     {
-        image: "/images/AITCCoreTrays/10.jpg",
+        image: "/images/AITCCoreTrays/10.webp",
     },
     {
-        image: "/images/AITCCoreTrays/11.jpg"
+        image: "/images/AITCCoreTrays/11.webp"
     },
     {
-        image: "/images/AITCCoreTrays/9.jpg",
+        image: "/images/AITCCoreTrays/9.webp",
     },
     {
-        image: "/images/AITCCoreTrays/10.jpg",
+        image: "/images/AITCCoreTrays/10.webp",
     },
     {
-        image: "/images/AITCCoreTrays/11.jpg"
+        image: "/images/AITCCoreTrays/11.webp"
     },
 ];
 
@@ -38,7 +39,7 @@ export default function AITCCoreTrays() {
 
     return (
         <main className="bg-black pt-[80px] md:pt-[112px]">
-            <section className="relative text-white py-18 px-4 md:px-16 mb-24" style={{ backgroundImage: "url('/images/artwork/artwork-7.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
+            <section className="relative text-white py-18 px-4 md:px-16 mb-24" style={{ backgroundImage: "url('/images/artwork/artwork-7.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
                 <div className="container max-w-6xl mx-auto px-4 z-10 relative">
                     <div className="text-center">
                         <div className="inline-flex items-center justify-center mb-6">
@@ -58,7 +59,7 @@ export default function AITCCoreTrays() {
             </section>
 
             <div className="relative">
-                <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/images/artwork/artwork-6.jpg')" }} >
+                <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/images/artwork/artwork-6.webp')" }} >
                 </div>
                 <section className="max-w-[1400px] mx-auto py-18 my-24">
                     <div className="container mx-auto px-4">
@@ -104,7 +105,7 @@ export default function AITCCoreTrays() {
                     </div>
                 </section>
             </div>
-            <section className="py-18 relative" style={{ backgroundImage: "url('/images/artwork/artwork-6.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
+            <section className="py-18 relative" style={{ backgroundImage: "url('/images/artwork/artwork-6.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }} >
                 <div className="max-w-[1400px] mx-auto px-4 z-10 py-8 relative">
                     <h2 className="text-3xl font-bold text-center mb-12 text-white">{t('features.heading')}</h2>
 
@@ -112,7 +113,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.jpg"
+                                    src="/images/AITCCoreTrays/10.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -124,7 +125,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-green-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.jpg"
+                                    src="/images/AITCCoreTrays/10.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -136,7 +137,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-purple-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/11.jpg"
+                                    src="/images/AITCCoreTrays/11.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -148,7 +149,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/9.jpg"
+                                    src="/images/AITCCoreTrays/9.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -160,7 +161,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-red-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.jpg"
+                                    src="/images/AITCCoreTrays/10.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -173,7 +174,7 @@ export default function AITCCoreTrays() {
             </section>
 
             <section className="py-18 my-24 rounded-2xl"
-                style={{ backgroundImage: "url('/images/artwork/artwork-7.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }}
+                style={{ backgroundImage: "url('/images/artwork/artwork-7.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: 'rgba(0, 0, 0, 0.8)', backgroundBlendMode: 'multiply' }}
             >
                 <div className="max-w-[1400px] mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12">
@@ -240,20 +241,70 @@ export default function AITCCoreTrays() {
                                 </div>
                             ))}
                         </div>
+                        <div className="mt-12 bg-gradient-to-br from-black/60 to-black p-4 md:p-8 rounded-xl text-center z-10 relative shadow-2xl">
+                            <h2 className="text-4xl font-bold text-center mb-10 text-white">{t('location.heading')}</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {/* Head Office Section */}
+                                <div className="bg-gradient-to-br from-white/10 to-white/10 p-6 rounded-xl text-left border border-gray-700 hover:border-gray-500 transition-all duration-300">
+                                <div className='flex flex-col justify-between h-full'>
+                                    <div>
+                                        <div className="flex items-center mb-4">
+                                            <div className="bg-black p-2 rounded-lg mr-3">
+                                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                </svg>
+                                            </div>
+                                            <h3 className="text-xl font-semibold text-white">{t('location.office')}</h3>
+                                        </div>
+                                        <div className="space-y-3 mb-4">
+                                            <div className="flex items-start">
+                                                <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                </svg>
+                                                <div>
+                                                    <p className="text-lg text-white font-medium mb-1">Addaan International Trading Company (AITC)</p>
+                                                    <p className="text-gray-300">Al Massa Center, Al Marwa District,</p>
+                                                    <p className="text-gray-300">2nd Floor, Office No. 103,</p>
+                                                    <p className="text-gray-300">Jeddah 23545, Saudi Arabia</p>
+                                                </div>
+                                            </div>
 
-                        <div className="mt-12 bg-black p-6 rounded-lg text-center z-10 relative">
-                            <h3 className="text-xl font-semibold mb-2">{t('vision.heading')}</h3>
-                            <p>{t('vision.paragraph')}</p>
-                            <h2 className="text-3xl font-bold text-center mt-12">{t('location.heading')}</h2>
-                            <div className="max-w-3xl mx-auto text-center">
-                                <div className="bg-black p-6 rounded-lg mb-6">
-                                    <h3 className="text-xl font-semibold mb-4">{t('location.office')}</h3>
-                                    <p className="text-lg mb-4">{t('location.address')}</p>
+                                            <div className="flex items-start">
+                                                <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                                </svg>
+                                                <div>
+                                                    <p className="text-gray-300"><span className="font-medium text-white">Email:</span> info@addaaninternational.com</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="flex items-start">
+                                                <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                                </svg>
+                                                <div>
+                                                    <p className="text-gray-300"><span className="font-medium text-white">Phone:</span> +966 12 661 0243</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="flex items-start">
+                                                <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <div>
+                                                    <p className="text-gray-300"><span className="font-medium text-white">Office Hours:</span></p>
+                                                    <p className="text-gray-300">Sunday – Thursday: 9:00 AM – 6:00 PM</p>
+                                                    <p className="text-gray-300">Friday – Saturday: Closed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <a
-                                        href="https://www.google.com/maps?q=Al+Khobar+Saudi+Arabia"
+                                        href="https://maps.app.goo.gl/dH4u47x2Tag6NUwEA"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center px-6 py-3 bg-white text-black rounded-lg hover:bg-[#c1bfbf] transition-colors duration-300"
+                                        className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-black to-black text-white rounded-lg hover:from-black/80 hover:to-black/80 transition-all duration-300 mt-4 font-medium shadow-lg hover:shadow-xl"
                                     >
                                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -262,8 +313,63 @@ export default function AITCCoreTrays() {
                                         {t('location.viewMap')}
                                     </a>
                                 </div>
+                                </div>
+
+                                {/* Warehouse Section */}
+                                <div className="bg-gradient-to-br from-white/10 to-white/10 p-6 rounded-xl text-left border border-gray-700 hover:border-gray-500 transition-all duration-300">
+                                    <div className='flex flex-col justify-between h-full'>
+                                        <div>
+                                            <div className="flex items-center mb-4">
+                                                <div className="bg-black p-2 rounded-lg mr-3">
+                                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h18v18H3V3z" />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9h18M9 21V9" />
+                                                    </svg>
+                                                </div>
+                                                <h3 className="text-xl font-semibold text-white">Warehouse</h3>
+                                            </div>
+
+                                            <div className="space-y-3 mb-4">
+                                                <div className="flex items-start">
+                                                    <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                    </svg>
+                                                    <div>
+                                                        <p className="text-lg text-white font-medium mb-1">Addaan International Trading Company - Warehouse</p>
+                                                        <p className="text-gray-300">2966 Al Zahed, Ad Dahiah,</p>
+                                                        <p className="text-gray-300">Jeddah 22529, Saudi Arabia</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-start">
+                                                <svg className="w-5 h-5 text-gray-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                <div>
+                                                    <p className="text-gray-300"><span className="font-medium text-white">Warehouse Timing:</span></p>
+                                                    <p className="text-gray-300">Sunday – Thursday: 8:30 AM – 5:30 PM </p>
+                                                    <p className="text-gray-300">Warehouse will be closed after working hours</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a
+                                            href="https://maps.app.goo.gl/dH4u47x2Tag6NUwEA"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-black to-black text-white rounded-lg hover:from-black/80 hover:to-black/80 transition-all duration-300 mt-4 font-medium shadow-lg hover:shadow-xl"
+                                        >
+                                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            {t('location.viewMap')}
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                            <ContactUsAITCForm />
                     </div>
                 </div>
             </section>

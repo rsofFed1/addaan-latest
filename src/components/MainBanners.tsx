@@ -1,25 +1,23 @@
 "use client";
-import { dataItems } from "@/constant/WhatWebelieveSectionData";
+import { dataItems } from "@/constant/MainBannersSectionData";
+import { cn } from "@/lib/utils";
+import { Params } from "@/types/locale";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BackgroundAnimations } from "./animations/animations";
-import { cn } from "@/lib/utils";
-import { useParams } from "next/navigation";
-import { Params } from "@/types/locale";
 
-const WhatWebelieveSection = () => {
-  const t = useTranslations("WhatWeBelieve");
-  const [activeIndex, setActiveIndex] = useState(0);
+const MainBanners = () => {
+  const t = useTranslations("MainBanners");
+  const [_, setActiveIndex] = useState(0);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const progress = ((activeIndex + 1) / dataItems.length) * 100;
   const { locale } = useParams<Params>();
   const isRTL = locale === 'ar';
 
@@ -33,11 +31,14 @@ const WhatWebelieveSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-[#202021] relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,transparent,black)] bg-grid-pattern"></div>
-      <BackgroundAnimations />
-      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-        <div className="px-0 md:px-16 pb-10 md:pb-16">
+    <section className="py-16 md:py-24 relative mb-24">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: "url('/images/artwork/artwork-4.webp')" }}
+      >
+      </div>
+      <div className="max-w-[1250px] mx-auto px-6 relative">
+        <div>
           <p className="uppercase tracking-widest text-white text-sm mb-5">
             {t("heading.label")}
           </p>
@@ -64,14 +65,14 @@ const WhatWebelieveSection = () => {
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 5 },
+              1280: { slidesPerView: 4 },
             }}
           >
-            {dataItems.map((item, idx) => (
+            {dataItems(locale).map((item, idx) => (
               <SwiperSlide key={idx}>
-                <Link href={item.href} className="group block relative">
+                <Link href={item.href} className="group block relative rounded-[20px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gradient-to-b from-white/5 to-white/10">
                   <div
-                    className="relative h-[280px] overflow-hidden rounded-t-[20px] rounded-l-[20px] mt-8"
+                    className="relative h-[280px] overflow-hidden rounded-t-[20px]"
                     onMouseMove={(e) => handleMouseMove(e)}
                     onMouseEnter={() => setHoveredCard(idx)}
                     onMouseLeave={() => setHoveredCard(null)}
@@ -93,17 +94,17 @@ const WhatWebelieveSection = () => {
                       priority={idx === 0}
                     />
                   </div>
-                  <div className="py-4">
-                    <p className="text-white text-sm font-normal mb-2">{t(item.titleKey.replace('WhatWeBelieve.', ''))}</p>
-                    <p className="text-gray-300 text-xs font-light mb-4">{t(item.descriptionKey.replace('WhatWeBelieve.', ''))}</p>
+                  <div className="p-4">
+                    <p className="text-white text-sm font-normal mb-2">{t(item.titleKey.replace('MainBanners.', ''))}</p>
                     <span className="text-blue-400 flex items-center gap-2 text-sm font-medium">
+                      {t("learnMore")}
                       <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
                         fill="none"
-                        className={cn("group-hover:translate-x-1 transition-transform mr-4", isRTL && "rotate-180 mr-4")}
+                        className={cn("group-hover:translate-x-1 transition-transform mr-2", isRTL && "rotate-180 mr-2")}
                       >
                         <path
                           fillRule="evenodd"
@@ -112,26 +113,16 @@ const WhatWebelieveSection = () => {
                           fill="currentColor"
                         />
                       </motion.svg>
-                      {t("learnMore")}
                     </span>
                   </div>
                 </Link>
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Progress Bar */}
-          <div className="w-full h-1 bg-gray-200 mt-6 rounded overflow-hidden">
-            <motion.div
-              className="h-full bg-gradient-to-r from-green-500 via-blue-500 to-purple-500"
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 0.4 }}
-            />
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default WhatWebelieveSection;
+export default MainBanners;

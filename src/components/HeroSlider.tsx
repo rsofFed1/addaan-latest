@@ -30,27 +30,31 @@ const HeroSlider = () => {
     const slides = [
         {
             id: 1,
-            image: '/images/IMDEX-1.png',
-            logos: '/images/partnersLogo/IMDEXLogo-1.png',
+            image: '/images/IMDEX-2.webp',
+            logos: '/images/partnersLogo/IMDEXLogo-1.webp',
+            subLogos: '/images/partnersLogo/subLogos.webp',
             title: t('slides.0.title'),
+            titleNextLine: t('slides.0.titleNextLine'),
             description: t('slides.0.description'),
             buttonText: t('slides.0.buttonText'),
             thumbTitle: t('slides.0.thumbTitle')
         },
         {
             id: 2,
-            image: '/images/AITC.jpg',
-            logos: '/images/brandLogo/Adaan-Logo.png',
+            image: '/images/AITC.webp',
+            logos: '/images/brandLogo/Adaan-short-Logo.webp',
             title: t('slides.1.title'),
+            titleNextLine: t('slides.1.titleNextLine'),
             description: t('slides.1.description'),
             buttonText: t('slides.1.buttonText'),
             thumbTitle: t('slides.1.thumbTitle')
         },
         {
             id: 3,
-            image: '/images/products/DESCO/2.jpeg',
-            logos: '/images/partnersLogo/DescoLogo.png',
+            image: '/images/products/DESCO/2.webp',
+            logos: '/images/partnersLogo/DescoLogo.webp',
             title: t('slides.2.title'),
+            titleNextLine: t('slides.2.titleNextLine'),
             description: t('slides.2.description'),
             buttonText: t('slides.2.buttonText'),
             thumbTitle: t('slides.2.thumbTitle')
@@ -169,22 +173,47 @@ const HeroSlider = () => {
                                 <div className={cn('absolute inset-0 from-black/70 via-black/50 to-black/20', isRTL ? "bg-gradient-to-l" : "bg-gradient-to-r")}></div>
                             </div>
                             <div
-                                className="absolute top-50 z-10 flex flex-col justify-evenly gap-2 items-start text-white max-w-[1250px]"
+                                className="absolute top-30 z-10 flex flex-col justify-evenly gap-2 items-start text-white max-w-[1250px]"
                                 onMouseEnter={handleContentHover}
                                 onMouseLeave={handleContentLeave}
                             >
                                 <AnimatePresence mode="wait">
                                     {activeIndex === index && (
                                         <>
-                                            {slide.logos && (
-                                                <Image
-                                                    height={200}
-                                                    width={200}
-                                                    src={slide.logos}
-                                                    alt={slide.title}
-                                                    className='mb-10'
-                                                />
-                                            )}
+                                            <motion.div
+                                                key={`logos-${slide.id}`}
+                                                initial="hidden"
+                                                animate="visible"
+                                                variants={{
+                                                    hidden: { opacity: 0, y: 30 },
+                                                    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+                                                }}
+                                                className='flex items-center gap-4 mb-10'
+                                            >
+                                                {slide.logos && (
+                                                    <div>
+                                                        <Image
+                                                            height={100}
+                                                            width={200}
+                                                            src={slide.logos}
+                                                            alt={slide.title}
+                                                            className='object-contain h-[70px] w-full py-4 '
+                                                        />
+                                                    </div>
+                                                )}
+
+                                                {slide.subLogos && (
+                                                    <div>
+                                                        <Image
+                                                            height={150}
+                                                            width={300}
+                                                            src={slide.subLogos}
+                                                            alt={slide.title}
+                                                            className='object-contain drop-shadow-lg border-l-2 border-gray-400 pl-4'
+                                                        />
+                                                    </div>
+                                                )}
+                                            </motion.div>
                                             <motion.h2
                                                 key={`title-${slide.id}`}
                                                 initial="hidden"
@@ -193,10 +222,32 @@ const HeroSlider = () => {
                                                     hidden: { opacity: 0, y: 30 },
                                                     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
                                                 }}
-                                                className="text-4xl md:text-5xl font-bold mb-6"
+                                                className="text-3xl md:text-[48px] font-bold mb-4 md:leading-18 md:tracking-wide"
                                             >
-                                                {slide.title}
+                                                {slide.title} <br />
+                                                <motion.div
+                                                    key={`title-${slide.id}`}
+                                                    initial="hidden"
+                                                    animate="visible"
+                                                    variants={{
+                                                        hidden: { opacity: 0, y: 30 },
+                                                        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+                                                    }}
+                                                    className='text-[#60ccf3]'>
+                                                    {slide.titleNextLine}
+                                                </motion.div>
                                             </motion.h2>
+                                            <motion.div
+                                                key={`underline-${slide.id}`}
+                                                initial="hidden"
+                                                animate="visible"
+                                                variants={{
+                                                    hidden: { opacity: 0, width: 0 },
+                                                    visible: { opacity: 1, width: '60px', transition: { duration: 0.8, ease: "easeOut" } }
+                                                }}
+                                                className="h-1 w-[60px] bg-[#60ccf3] mb-4"
+                                            >
+                                            </motion.div>
                                             <motion.p
                                                 key={`description-${slide.id}`}
                                                 initial="hidden"
@@ -205,7 +256,7 @@ const HeroSlider = () => {
                                                     hidden: { opacity: 0, y: 30 },
                                                     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
                                                 }}
-                                                className="text-4xl md:text-4xl font-bold mb-6"
+                                                className="text-3xl md:text-4xl font-medium mb-4 md:max-w-[600px] tracking-wide"
                                             >
                                                 {slide.description}
                                             </motion.p>
@@ -219,9 +270,9 @@ const HeroSlider = () => {
                                                 }}
                                                 transition={{ delay: 0.4 }}
                                                 href="#"
-                                                className="group inline-flex items-center gap-3 px-2 py-3 text-white font-medium rounded-full"
+                                                className="py-4"
                                             >
-                                                <span className="border border-white/30 rounded-full px-6 py-3 group-hover:bg-white/10 transition-all duration-300">
+                                                <span className='text-2xl'>
                                                     {slide.buttonText}
                                                 </span>
                                                 <motion.div
