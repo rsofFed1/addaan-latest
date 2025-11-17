@@ -3,7 +3,6 @@
 .vscode
 # /public
 /public/videos
-/public/productCatalogs
 
 # dependencies
 /node_modules
