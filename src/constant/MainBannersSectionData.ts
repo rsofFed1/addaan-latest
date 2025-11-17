@@ -12,12 +12,12 @@ export const dataItems = (locale: string): SlideData[] => [
   },
   {
     titleKey: "MainBanners.items.desco",
-    image: '/images/products/Desco/6.webp',
+    image: '/images/products/DESCO/6.webp',
     href: `/${locale}/desco`,
   },
   {
     titleKey: "MainBanners.items.drillingTools",
-    image: '/images/products/Desco/3.webp',
+    image: '/images/products/DESCO/3.webp',
     href: `/${locale}/drillingTools`,
   },
   {
