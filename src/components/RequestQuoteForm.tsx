@@ -49,7 +49,7 @@ const RequestQuoteForm = () => {
                         </svg>
                     </div>
                     <h3 className="text-xl font-bold text-black mb-3">Thank You!</h3>
-                    <p className="text-black text-lg mb-2"> Your inquiry has been received successfully. </p>
+                    <p className="text-black text-lg mb-2"> Your request has been received successfully. </p>
                 </div>
                 <Button
                     onClick={() => setIsSubmitted(false)}

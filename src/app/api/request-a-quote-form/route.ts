@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     const mailOptions : SendMailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
-      subject: `New AITC Contact Form Submission from ${name}`,
+      subject: `New Request a Quote from ${name}`,
       html: RequestQuoteFormEmailTemplate({
         name,
         description,

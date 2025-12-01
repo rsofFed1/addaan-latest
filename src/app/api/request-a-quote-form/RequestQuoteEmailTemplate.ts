@@ -9,7 +9,7 @@ export const RequestQuoteFormEmailTemplate = ({
     <div style="font-family: Arial, sans-serif; width: 100%; margin: 0 auto; padding: 20px; background-color: #F9F9F9;">
       <div style="background-color: #FFFFFF; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         <h2 style="color: #333; margin-bottom: 20px; border-bottom: 2px solid #FFB84D; padding-bottom: 10px;">
-          Get in Touch with AITC
+           Request a Quote
         </h2>
         <div style="margin-bottom: 20px;">
           <strong style="color: #555;">Name:</strong>
