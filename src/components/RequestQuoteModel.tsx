@@ -1,8 +1,7 @@
 "use client"
 import { useState } from 'react';
-import ContactUsAITCForm from './ContactFormAITC';
-import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 import RequestQuoteForm from './RequestQuoteForm';
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 
 interface RequestQuoteModelProps {
     trigger: React.ReactNode
