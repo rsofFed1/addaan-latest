@@ -369,7 +369,7 @@ export default function AITCCoreTrays() {
                                 </div>
                             </div>
                         </div>
-                            <ContactUsAITCForm />
+                        <ContactUsAITCForm />
                     </div>
                 </div>
             </section>

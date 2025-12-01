@@ -64,14 +64,14 @@ function CallToAction({
                             {t('buttons.explore')}
                         </Link>
                     )}
-
-                    {/* Request Quote Button */}
-                    <button className="bg-mining-gray text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-mining-gray/80 hover:scale-105 flex-1 sm:flex-none">
-                        <RequestQuoteModel
-                            trigger={<div>{t('buttons.quote')}</div>}
-                            title={t('buttons.quote')}
-                        />
-                    </button>
+                    <RequestQuoteModel
+                        trigger={
+                            <button className="bg-mining-gray text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-mining-gray/80 hover:scale-105">
+                                {t('buttons.quote')}
+                            </button>
+                        }
+                        title={t('buttons.quote')}
+                    />
                 </div>
             </div>
         </div>

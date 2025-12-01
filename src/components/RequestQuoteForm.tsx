@@ -5,15 +5,14 @@ import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Button } from './ui/button';
+import { RequestQuoteFormData, RequestQuoteFormSchema } from '@/validators/requestQuoteForm.schema';
 
-const ContactUsAITCForm = () => {
+const RequestQuoteForm = () => {
 
     const initialValues = {
         name: "",
-        companyName: "",
-        inquiryMessage: "",
         email: "",
-        phone: "",
+        description: "",
     };
 
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -23,14 +22,14 @@ const ContactUsAITCForm = () => {
         handleSubmit,
         reset,
         formState: { errors, isSubmitting },
-    } = useForm<ContactUsAITCFormData>({
-        resolver: zodResolver(ContactUsAITCFormSchema),
+    } = useForm<RequestQuoteFormData>({
+        resolver: zodResolver(RequestQuoteFormSchema),
         defaultValues: initialValues,
     });
 
-    const onSubmit = async (data: ContactUsAITCFormData) => {
+    const onSubmit = async (data: RequestQuoteFormData) => {
         setIsSubmitted(true);
-        const response = await axios.post<{ message: string, success: boolean }>('/api/contact-us-aitc-form', data);
+        const response = await axios.post<{ message: string, success: boolean }>('/api/request-a-quote-form', data);
         if (response.data.success) {
             setIsSubmitted(false);
             toast.success(response.data.message);
@@ -52,7 +51,6 @@ const ContactUsAITCForm = () => {
                     </div>
                     <h3 className="text-xl font-bold text-black mb-3">Thank You!</h3>
                     <p className="text-black text-lg mb-2"> Your inquiry has been received successfully. </p>
-                    <p className="text-black"> Our team will contact you within 24-48 hours. </p>
                 </div>
                 <Button
                     onClick={() => setIsSubmitted(false)}
@@ -66,21 +64,13 @@ const ContactUsAITCForm = () => {
 
     return (
         <div>
-            {/* Header Section */}
-            <div className="text-center my-8">
-                <h2 className="text-3xl font-bold text-white mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text">
-                    Contact Us
-                </h2>
-                <div className="w-40 h-1 bg-[#13A7DC] mx-auto mb-4 rounded-full"></div>
-                <p className="text-md text-white max-w-2xl mx-auto leading-relaxed">
-                    Get in Touch with AITC – We&apos;ll respond within 24-48 hours.
-                </p>
+            <div>
+                <h2 className='text-2xl text-center mb-4'>Request a Quote</h2>
             </div>
             {/* Form Section */}
             <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
                 <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-8">
-                    {/* Name & Company Row */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 gap-6">
                         <div className="space-y-2">
                             <label htmlFor="name" className="block text-md font-medium text-black mb-2"> Name <span className="text-red-600 text-md">*</span> </label>
                             <input
@@ -96,22 +86,6 @@ const ContactUsAITCForm = () => {
                             )}
                         </div>
                         <div className="space-y-2">
-                            <label htmlFor="companyName" className="block text-md font-medium text-black mb-2"> Company Name <span className="text-red-600 text-md">*</span> </label>
-                            <input
-                                id="companyName"
-                                required
-                                placeholder="Enter your company name"
-                                {...register("companyName")}
-                                aria-invalid={!!errors.companyName}
-                                className="w-full px-4 py-3 text-black bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400"
-                            />
-                            {errors.companyName && (
-                                <p className="text-sm text-red-600">{errors.companyName.message}</p>
-                            )}
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="space-y-2">
                             <label htmlFor="email" className="block text-sm font-medium text-black">Email <span className="text-red-600 text-md">*</span></label>
                             <input
                                 id="email"
@@ -126,34 +100,20 @@ const ContactUsAITCForm = () => {
                             )}
                         </div>
                         <div className="space-y-2">
-                            <label htmlFor="phone" className="block text-sm font-medium text-black">Phone <span className="text-red-600 text-md">*</span></label>
-                            <input
-                                id="phone"
-                                type="tel"
-                                placeholder="Enter your phone number"
-                                {...register("phone")}
-                                aria-invalid={!!errors.phone}
+                            <label htmlFor="description" className="block text-sm font-medium text-black">Description <span className="text-red-600 text-md">*</span></label>
+                            <textarea
+                                id="description"
+                                required
+                                rows={5}
+                                placeholder="Enter your description"
+                                {...register("description")}
+                                aria-invalid={!!errors.description}
                                 className="w-full px-4 py-3 text-black bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400"
                             />
-                            {errors.phone && (
-                                <p className="text-sm text-red-600">{errors.phone.message}</p>
+                            {errors.description && (
+                                <p className="text-sm text-red-600">{errors.description.message}</p>
                             )}
                         </div>
-                    </div>
-                    <div className="space-y-2">
-                        <label htmlFor="message" className="block text-sm font-medium text-black">Message / Inquiry <span className="text-red-600 text-md">*</span></label>
-                        <textarea
-                            id="message"
-                            required
-                            rows={5}
-                            placeholder="Please describe your inquiry in detail..."
-                            {...register("inquiryMessage")}
-                            aria-invalid={!!errors.inquiryMessage}
-                            className="w-full px-4 py-3 text-black bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400"
-                        />
-                        {errors.inquiryMessage && (
-                            <p className="text-sm text-red-600">{errors.inquiryMessage.message}</p>
-                        )}
                     </div>
                     <div>
                         <Button disabled={isSubmitting} type="submit" className="bg-black w-full font-medium text-md text-white py-6 rounded-md hover:bg-black/90 transition-colors cursor-pointer">
@@ -162,17 +122,8 @@ const ContactUsAITCForm = () => {
                     </div>
                 </form>
             </div >
-            {/* Additional Info */}
-            <div className="text-center my-4 w-full">
-                <div className="flex justify-center items-center w-full text-gray-600 bg-gray-50 rounded-2xl px-4 py-2">
-                    <svg className="w-4 h-4 mr-2 text-[#13A7DC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-sm text-black">Response time: 24-48 hours</span>
-                </div>
-            </div>
         </div >
     );
 };
 
-export default ContactUsAITCForm;
+export default RequestQuoteForm;
