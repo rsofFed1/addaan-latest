@@ -44,7 +44,7 @@ export const DescoProductsData: DescoSupplier[] = [
     subcategories: [
       {
         image: "/images/partnersLogo/DescoLogo.webp",
-        name: "Multipurpose Rigs",
+        name: "Exploration and Geotechnical Drilling Rig",
         description:
           "High-performance drilling rigs designed for the most challenging mining environments.",
         products: [
@@ -57,44 +57,12 @@ export const DescoProductsData: DescoSupplier[] = [
             link: "https://desco-inc.com/products/SP3500",
           },
           {
-            name: "Multipurpose Rigs",
-            image: "/images/products/DESCO/3.webp",
-            pdfImage: "",
-            description:
-              "DESCO is a global leader in drilling optimization and data management solutions for the mining and exploration industries.",
-            link: "https://desco-inc.com/products/SP4500SA-RC",
-          },
-          {
-            name: "Multipurpose Rigs",
-            image: "/images/products/DESCO/4.webp",
-            pdfImage: "",
-            description:
-             "DESCO is a global leader in drilling optimization and data management solutions for the mining and exploration industries.",
-            link: "https://desco-inc.com/products/SP3500",
-          },
-        ],
-      },
-      {
-        image: "/images/partnersLogo/DescoLogo.webp",
-        name: "Core Drilling Rigs",
-        description:
-          "High-performance drilling rigs designed for the most challenging mining environments.",
-        products: [
-          {
             name: "Core Drilling Rigs",
             image: "/images/products/DESCO/3.webp",
             pdfImage: "",
             description: "Core Drilling Rigs",
             link: "https://desco-inc.com/products/SP4500SA-RC",
           },
-        ],
-      },
-      {
-        image: "/images/partnersLogo/DescoLogo.webp",
-        name: "Water Well Rigs",
-        description:
-          "High-performance drilling rigs designed for the most challenging mining environments.",
-        products: [
           {
             name: "Water Well Rigs",
             image: "/images/products/DESCO/4.webp",
@@ -102,14 +70,6 @@ export const DescoProductsData: DescoSupplier[] = [
             description: "Water Well Rigs",
             link: "https://desco-inc.com/products/SP3500",
           },
-        ],
-      },
-      {
-        image: "/images/partnersLogo/DescoLogo.webp",
-        name: "Truck Mounted Rigs",
-        description:
-          "High-performance drilling rigs designed for the most challenging mining environments.",
-        products: [
           {
             name: "Truck Mounted Rigs",
             image: "/images/products/DESCO/1.webp",
@@ -119,6 +79,51 @@ export const DescoProductsData: DescoSupplier[] = [
           },
         ],
       },
+      // {
+      //   image: "/images/partnersLogo/DescoLogo.webp",
+      //   name: "Core Drilling Rigs",
+      //   description:
+      //     "High-performance drilling rigs designed for the most challenging mining environments.",
+      //   products: [
+      //     {
+      //       name: "Core Drilling Rigs",
+      //       image: "/images/products/DESCO/3.webp",
+      //       pdfImage: "",
+      //       description: "Core Drilling Rigs",
+      //       link: "https://desco-inc.com/products/SP4500SA-RC",
+      //     },
+      //   ],
+      // },
+      // {
+      //   image: "/images/partnersLogo/DescoLogo.webp",
+      //   name: "Water Well Rigs",
+      //   description:
+      //     "High-performance drilling rigs designed for the most challenging mining environments.",
+      //   products: [
+      //     {
+      //       name: "Water Well Rigs",
+      //       image: "/images/products/DESCO/4.webp",
+      //       pdfImage: "",
+      //       description: "Water Well Rigs",
+      //       link: "https://desco-inc.com/products/SP3500",
+      //     },
+      //   ],
+      // },
+      // {
+      //   image: "/images/partnersLogo/DescoLogo.webp",
+      //   name: "Truck Mounted Rigs",
+      //   description:
+      //     "High-performance drilling rigs designed for the most challenging mining environments.",
+      //   products: [
+      //     {
+      //       name: "Truck Mounted Rigs",
+      //       image: "/images/products/DESCO/1.webp",
+      //       pdfImage: "",
+      //       description: "Truck Mounted Rigs",
+      //       link: "https://desco-inc.com/products/SP3500",
+      //     },
+      //   ],
+      // },
     ],
   },
 ];

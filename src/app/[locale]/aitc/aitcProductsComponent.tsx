@@ -113,12 +113,12 @@ export const AITCProductsComponent = ({ showHeader = true }: { showHeader: boole
                                                             {subcategory.image ? (<Image height={250} width={250} src={subcategory.image} alt={subcategory.name} className="object-contain h-full w-full" />) : (<div className="text-gray-400">No Image Available</div>)}
                                                         </div>
                                                         <div>
-                                                            <h4 className="text-lg font-semibold text-white mb-2">
+                                                            <h4 className="text-2xl font-semibold text-white mb-2">
                                                                 {subcategory.name}
                                                             </h4>
-                                                            <p className="text-gray-200 leading-relaxed">
+                                                            {/* <p className="text-gray-200 leading-relaxed">
                                                                 {subcategory.description}
-                                                            </p>
+                                                            </p> */}
                                                         </div>
                                                         <div className="flex flex-col md:flex-row items-center gap-4">
                                                         </div>
@@ -136,7 +136,7 @@ export const AITCProductsComponent = ({ showHeader = true }: { showHeader: boole
                                                                         <div className="w-full h-[400px] mb-4 rounded-lg flex items-center justify-center shadow ">
                                                                             {product.image ? (<Image height={600} width={600} src={product.image} alt={product.name} className="object-cover h-full w-full" />) : (<div className="text-gray-400">No Image Available</div>)}
                                                                         </div>
-                                                                        <h5 className="font-semibold text-gray-900 mb-2">
+                                                                        <h5 className="text-2xl font-semibold text-gray-900 mb-2">
                                                                             {product.name}
                                                                         </h5>
                                                                         <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">

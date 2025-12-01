@@ -42,7 +42,7 @@ interface CardProps {
 function Card({ children, index, progress, range, totalCards }: CardProps) {
   const isLast = index === totalCards - 1
 
-  const scale = useTransform(progress, range, [1, isLast ? 1 : 0.95])
+  const scale = useTransform(progress, range, [1, isLast ? 1 : 1])
   const opacity = useTransform(progress, range, [1, isLast ? 1 : 1])
 
   return (
@@ -50,7 +50,7 @@ function Card({ children, index, progress, range, totalCards }: CardProps) {
       style={{
         scale,
         opacity,
-        top: `${index * 20 + 160}px`,
+        top: `${index * 0 + 160}px`,
       }}
       className="sticky w-full"
     >

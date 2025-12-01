@@ -22,7 +22,7 @@ const Footer = () => {
         { name: t("products.coreTray"), href: "#" },
         { name: t("products.imdex"), href: "#" },
         { name: t("products.desco"), href: "#" },
-        { name: t("products.crEpiroc"), href: "#" },
+        // { name: t("products.crEpiroc"), href: "#" },
         { name: t("products.tools"), href: "#" },
     ];
 

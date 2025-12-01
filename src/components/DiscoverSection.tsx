@@ -60,10 +60,10 @@ const DiscoverSlider = () => {
               >
                 <div className="relative z-10 flex justify-between items-center w-full h-full py-4 gap-4">
                   <div>
-                    <span className="block text-md font-semibold tracking-widest text-[#ffffff] mb-2">
+                    <span className="block text-lg font-semibold tracking-widest text-[#ffffff] mb-2">
                       {t(item.label)}
                     </span>
-                    <h3 className="text-lg font-normal text-[#ffffff]">
+                    <h3 className="text-lg max-w-[650px] font-normal text-[#ffffff]">
                       {t(item.title)}
                     </h3>
                   </div>

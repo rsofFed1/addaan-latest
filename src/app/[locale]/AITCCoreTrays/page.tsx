@@ -13,22 +13,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const AITCCoreTraysData = [
     {
-        image: "/images/AITCCoreTrays/9.webp",
+        image: "/images/AITCCoreTrays/1.webp",
     },
     {
-        image: "/images/AITCCoreTrays/10.webp",
+        image: "/images/AITCCoreTrays/2.webp",
     },
     {
-        image: "/images/AITCCoreTrays/11.webp"
+        image: "/images/AITCCoreTrays/3.webp"
     },
     {
-        image: "/images/AITCCoreTrays/9.webp",
+        image: "/images/AITCCoreTrays/4.webp",
     },
     {
-        image: "/images/AITCCoreTrays/10.webp",
+        image: "/images/AITCCoreTrays/5.webp",
     },
     {
-        image: "/images/AITCCoreTrays/11.webp"
+        image: "/images/AITCCoreTrays/6.webp"
     },
 ];
 
@@ -113,7 +113,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.webp"
+                                    src="/images/AITCCoreTrays/1.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -125,7 +125,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-green-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.webp"
+                                    src="/images/AITCCoreTrays/3.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -137,7 +137,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-purple-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/11.webp"
+                                    src="/images/AITCCoreTrays/8.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -149,7 +149,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/9.webp"
+                                    src="/images/AITCCoreTrays/5.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />
@@ -161,7 +161,7 @@ export default function AITCCoreTrays() {
                         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-red-500">
                             <div className="max-h-[300px] h-full w-full rounded-lg shadow bg-white mb-4">
                                 <Image height={300} width={300}
-                                    src="/images/AITCCoreTrays/10.webp"
+                                    src="/images/AITCCoreTrays/6.webp"
                                     alt={t('features.uv.title')}
                                     className="object-cover h-full w-full rounded-2xl"
                                 />

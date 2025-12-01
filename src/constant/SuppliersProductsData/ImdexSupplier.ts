@@ -185,7 +185,7 @@ export const ImdexProductsData: ImdexSupplier[] = [
             link: "/productCatalogs/DEVICO/DeviGyro-Overshot-Xpress-Product-Data-Sheet.pdf",
           },
           {
-            name: "DeviGyro RG30 HELIX",
+            name: "RG30 HELIX",
             image: "/images/products/DEVICO/DeviGyro RG30 HELIX.webp",
             pdfImage: "/images/products/DEVICO/pdf-DeviGyro RG30 HELIX.webp",
             description:
@@ -193,7 +193,7 @@ export const ImdexProductsData: ImdexSupplier[] = [
             link: "/productCatalogs/DEVICO/DeviGyro-RG30-HELIX-Product-Data-Sheet.pdf",
           },
           {
-            name: "DeviGyro RG30 SLIMLINE",
+            name: "RG30 SLIMLINE",
             image: "/images/products/DEVICO/DeviGyro RG30 SLIMLINE.webp",
             pdfImage: "/images/products/DEVICO/pdf-DeviGyro RG30 SLIMLINE.webp",
             description:
@@ -201,7 +201,7 @@ export const ImdexProductsData: ImdexSupplier[] = [
             link: "/productCatalogs/DEVICO/DeviGyro-RG30-SLIMLINE-Product-Data-Sheet.pdf",
           },
           {
-            name: "DeviGyro RG40 STANDARD",
+            name: "RG40 STANDARD",
             image: "/images/products/DEVICO/DeviGyro RG40 STANDARD.webp",
             pdfImage: "/images/products/DEVICO/pdf-DeviGyro RG40 STANDARD.webp",
             description:

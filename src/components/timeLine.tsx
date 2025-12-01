@@ -40,7 +40,7 @@ export default function TimeLine() {
                                     )}
                                     <motion.div
                                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                                        className={`relative bg-gradient-to-br ${item.gradient} rounded-3xl p-8 flex items-center shadow-2xl border border-white/20 backdrop-blur-sm overflow-hidden`}
+                                        className={`relative bg-gradient-to-br ${item.gradient} rounded-3xl p-8 flex items-center overflow-hidden`}
                                     >
                                         <div className="relative z-10 w-full">
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -50,10 +50,10 @@ export default function TimeLine() {
                                                             <span className={`text-md font-bold ${item.textColor}`}> {item.date} </span>
                                                         </div>
                                                     </div>
-                                                    <h3 className={`text-2xl md:text-2xl font-bold mb-8 ${item.textColor} leading-tight`}>{t(item.titleKey)}</h3>
-                                                    <p className={`text-md ${item.textColor} opacity-90 leading-relaxed font-light`}>{t(item.descriptionKey)}</p>
+                                                    <h3 className={`text-2xl md:text-4xl font-bold mb-4 ${item.textColor} leading-tight`}>{t(item.titleKey)}</h3>
+                                                    <p className={`text-xl ${item.textColor} opacity-90 leading-relaxed font-light`}>{t(item.descriptionKey)}</p>
                                                 </div>
-                                                <div className="flex justify-center mx-auto max-w-[500px] w-full">
+                                                <div className="flex justify-center w-full">
                                                     {item.images && item.images.length > 0 && (
                                                         <div className="relative w-full h-60 overflow-hidden rounded-xl">
                                                             <Swiper

@@ -28,7 +28,7 @@ export const DrillingToolsProductsData: DrillingToolsSupplier[] = [
   {
     id: "drilling-tools",
     title: "DRILLING TOOLS",
-    image: "/images/partnersLogo/DescoLogo.webp",
+    image: "/images/brandLogo/Adaan-Logo.webp",
 
     icon: Package,
     description: "Comprehensive Drilling Solutions",
@@ -43,78 +43,78 @@ export const DrillingToolsProductsData: DrillingToolsSupplier[] = [
     ],
     subcategories: [
       {
-        image: "/images/partnersLogo/DescoLogo.webp",
+        image: "/images/brandLogo/Adaan-Logo.webp",
         name: "Drilling Rods (Inner Tube Outer Tube) ",
         description:
           "High-quality diamond Rods for precision operations.",
         products: [
           {
             name: "Diamond Rods",
-            image: "/images/products/DESCO/1.webp",
+            image: "/images/products/DRILLING TOOLS/diamond rods.webp",
             pdfImage: "",
             description: "Premium diamond rods for core drilling",
           },
           {
             name: "Diamond Reamers",
-            image: "/images/products/DESCO/2.webp",
+            image: "/images/products/DRILLING TOOLS/diamond reamers.webp",
             pdfImage: "",
             description: "Precision reaming tools for hole enlargement",
           },
           {
             name: "Diamond Stabilizers",
-            image: "/images/products/DESCO/3.webp",
+            image: "/images/products/DRILLING TOOLS/diamond stabilizers.webp",
             pdfImage: "",
             description: "Stabilization tools for straight hole drilling",
           },
         ],
       },
       {
-        image: "/images/partnersLogo/DescoLogo.webp",
+        image: "/images/brandLogo/Adaan-Logo.webp",
         name: "Diamond Drilling Equipment ",
         description:
           "High-quality diamond drilling tools for precision operations.",
         products: [
           {
-            name: "Diamond Bits",
-            image: "/images/products/DESCO/1.webp",
+            name: "Head Assembly",
+            image: "/images/products/DRILLING TOOLS/head assembly.webp",
             pdfImage: "",
             description: "Premium diamond bits for core drilling",
           },
           {
-            name: "Diamond Reamers",
-            image: "/images/products/DESCO/2.webp",
+            name: "Diamond Drilling Bits",
+            image: "/images/products/DRILLING TOOLS/diamond drilling bits.webp",
             pdfImage: "",
             description: "Precision reaming tools for hole enlargement",
           },
           {
-            name: "Diamond Stabilizers",
-            image: "/images/products/DESCO/3.webp",
+            name: "Diamond Drilling Consumables",
+            image: "/images/products/DRILLING TOOLS/diamond drilling consumables.webp",
             pdfImage: "",
             description: "Stabilization tools for straight hole drilling",
           },
         ],
       },
       {
-        image: "/images/partnersLogo/DescoLogo.webp",
+        image: "/images/brandLogo/Adaan-Logo.webp",
         name: "RC Drilling Equipment ",
         description:
           "Reverse circulation tools for efficient sample collection.",
         products: [
           {
             name: "RC Bits",
-            image: "/images/products/DESCO/4.webp",
+            image: "/images/products/DRILLING TOOLS/rc bits.webp",
             pdfImage: "",
             description: "Specialized bits for reverse circulation drilling",
           },
           {
             name: "RC Hammers",
-            image: "/images/products/DESCO/5.webp",
+            image: "/images/products/DRILLING TOOLS/rc hammers.webp",
             pdfImage: "",
             description: "High-performance hammers for RC operations",
           },
           {
             name: "RC Rods",
-            image: "/images/products/DESCO/6.webp",
+            image: "/images/products/DRILLING TOOLS/rc rods.webp",
             pdfImage: "",
             description: "Durable rods for reverse circulation systems",
           },

@@ -68,12 +68,7 @@ const getClientData = (t: (key: string) => string): Client[] => [
   },
   {
     logo: "",
-    image: "/images/clientLogos/Drill Corp Sahara.webp",
-    href: "#",
-  },
-  {
-    logo: "",
-    image: "/images/clientLogos/saudi gold and refineruy.webp",
+    image: "/images/clientLogos/drill crop saudi.webp",
     href: "#",
   },
   {
