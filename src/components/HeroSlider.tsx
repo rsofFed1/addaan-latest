@@ -51,7 +51,7 @@ const HeroSlider = () => {
         },
         {
             id: 3,
-            image: '/images/products/DESCO/2.webp',
+            image: '/images/products/DESCO/7.webp',
             logos: '/images/partnersLogo/DescoLogo.webp',
             title: t('slides.2.title'),
             titleNextLine: t('slides.2.titleNextLine'),
