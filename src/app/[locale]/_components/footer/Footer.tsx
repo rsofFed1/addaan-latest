@@ -28,7 +28,7 @@ const Footer = () => {
 
     const otherWebsites = [
         { name: "IMDEX", href: "https://www.imdex.com", external: true },
-        { name: "CR Powered by Epiroc", href: "https://crmining.com", external: true },
+        // { name: "CR Powered by Epiroc", href: "https://crmining.com", external: true },
         { name: "Desco Drilling", href: "https://gtd-desco.com", external: true },
     ];
 
